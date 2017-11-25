@@ -1,0 +1,26 @@
+{
+  "name": "nutree",
+  "version": "1.0.0",
+  "description": "frontend with react-konvas",
+  "main": "index.js",
+  "dependencies": {
+    "konva": "^1.7.6",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-konva": "^1.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muuuchem/awakens.git"
+  },
+  "author": "Tyler Eakes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muuuchem/awakens/issues"
+  },
+  "homepage": "https://github.com/Muuuchem/awakens#readme"
+}
