@@ -2,7 +2,15 @@ import React from 'react';
 import { Layer, Rect, Stage } from 'react-konva';
 
 class Branch extends React.Component {
-    state = { color: 'green' };
+    constructor(parent) {
+        super();
+
+        this.state = {
+            t_minus: parent.t_minus - 1,
+            start: parent.end,
+            end:
+        },
+    }
 
     handleClick = () => {
         // window.Konva is a global variable for Konva framework namespace
