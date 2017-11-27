@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class Limb extends React.Component {
     constructor(props) {
         super(props);
@@ -37,14 +36,8 @@ class Limb extends React.Component {
 
 
     draw() {
-        // return this.state.rectangle.map((rect, key) => (
-        //     <MyRectangle
-        //         height={rect.height}
-        //         width={rect.width}
-        //     //...more props 
-        //     />
-        // )
-        // )
+        
+        
     }
 
     render() {
