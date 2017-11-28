@@ -2,15 +2,14 @@ import React from 'react';
 import { Layer, Rect, Stage, Shape } from 'react-konva';
 import CanvasElements from '../canvas/canvas_elements';
 
-class Branch extends React.Component {
+export default class Branch extends React.Component {
     constructor(parent) {
         super();
 
         this.state = {
             t_minus: parent.t_minus - 1,
             start: parent.end,
-            end:
-        },
+        }
     }
 
     handleClick = () => {
@@ -21,14 +20,14 @@ class Branch extends React.Component {
     }
 
     draw()  {
-            return (<Shape fill =”#00D2FF” draggable
+            return (<Shape fill='#00D2FF'
         sceneFunc = {
             function(ctx) {
+                ctx.lineWidth = 20;
                 ctx.beginPath();
-                ctx.moveTo(20, 50);
-                ctx.lineTo(220, 80);
-                ctx.quadraticCurveTo(150, 100, 260, 170);
-                ctx.closePath();
+                ctx.moveTo(400, 400);
+                ctx.lineTo(300, 300);
+                ctx.stroke();
                 // Konva specific method
                 ctx.fillStrokeShape(this);
             }
@@ -38,7 +37,7 @@ class Branch extends React.Component {
     };
     render() {
         return (
-            <div></div>
+            this.draw()
         );
     };
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import Branch from './branch';
 
 class Limb extends React.Component {
     constructor(props) {
