@@ -4,11 +4,15 @@ import CanvasElements from '../canvas/canvas_elements';
 
 export default class Branch extends React.Component {
     constructor(parent) {
-        super();
+        super(parent);
 
         this.state = {
-            t_minus: parent.t_minus - 1,
+            t_minus: parent.t_minus + 1,
             start: parent.end,
+            angle: {
+                a: parent.angle.a + parent.t_minus * .8 * ((-Math.PI / 16) + ((Math.PI / 8) * Math.random())),
+                b: parent.angle.b + parent.t_minus * .8 * ((-Math.PI / 16) + ((Math.PI / 8) * Math.random()))
+            }
         }
     }
 
@@ -23,10 +27,10 @@ export default class Branch extends React.Component {
             return (<Shape fill='#00D2FF'
         sceneFunc = {
             function(ctx) {
-                ctx.lineWidth = 20;
+                ctx.lineWidth = this.size * this.start.screen.scale;
                 ctx.beginPath();
-                ctx.moveTo(400, 400);
-                ctx.lineTo(300, 300);
+                ctx.moveTo(this.start.screen.x, this.start.screen.y);
+                ctx.lineTo(this.end.screen.x, this.end.screen.y);
                 ctx.stroke();
                 // Konva specific method
                 ctx.fillStrokeShape(this);

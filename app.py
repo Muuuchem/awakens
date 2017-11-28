@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    authorize_url = genomelink.OAuth.authorize_url(scope=['report:agreeableness'])
+    authorize_url = genomelink.OAuth.authorize_url(scope=['report:iron'])
 
     # Fetching a protected resource using an OAuth2 token if exists.
     reports = []
@@ -14,7 +14,7 @@ def index():
         for name in ['eye-color', 'beard-thickness', 'morning-person']:
             reports.append(genomelink.Report.fetch(name=name, population='european', token=session['oauth_token']))
 
-    return render_template('index.html', authorize_url=authorize_url, reports=reports)
+    return render_template('./frontend/public/index.html', authorize_url=authorize_url, reports=reports)
 
 @app.route('/callback')
 def callback():
@@ -22,7 +22,7 @@ def callback():
     # callback URL. With this redirection comes an authorization code included
     # in the request URL. We will use that to obtain an access token.
     token = genomelink.OAuth.token(request_url=request.url, client_id=client.client_id, client_secret=client.client_secret, callback_url=client.callback_url)
-
+    print(client.client_id)
     # At this point you can fetch protected resources but lets save
     # the token and show how this is done from a persisted token in index page.
     session['oauth_token'] = token
