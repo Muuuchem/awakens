@@ -49,7 +49,7 @@ class Limb extends React.Component {
                         this.draw()
                     }
                 </CanvasElements>
-                <button onClick={() => this.createRectangle()}> Create rectangle</button>
+                
             </div>
         )
     }
