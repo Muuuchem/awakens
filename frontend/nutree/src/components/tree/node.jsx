@@ -11,7 +11,6 @@ export default class Node extends React.Component {
                 a: parent.angle.a + parent.t_minus * 
             }
         }
-        this.draw
     }
 
     handleClick = () => {
@@ -21,22 +20,7 @@ export default class Node extends React.Component {
         // });
     }
 
-    draw() {
-        return (<Shape fill='#00D2FF'
-            sceneFunc={
-                function (ctx) {
-                    ctx.lineWidth = this.size * this.start.screen.scale;
-                    ctx.beginPath();
-                    ctx.moveTo(this.start.screen.x, this.start.screen.y);
-                    ctx.lineTo(this.end.screen.x, this.end.screen.y);
-                    ctx.stroke();
-                    // Konva specific method
-                    ctx.fillStrokeShape(this);
-                }
-            }
-        />)
-
-    };
+    
     render() {
         return (
             this.draw()

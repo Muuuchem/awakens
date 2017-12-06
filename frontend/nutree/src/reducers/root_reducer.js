@@ -1,9 +1,12 @@
 import { combineReducers } from 'redux';
+import nutritionReducer from './nutrition_reducer';
+
+
 
 
 
 const rootReducer = combineReducers({
-    ham: 3,
+    nutritionReducer,
 });
 
 export default rootReducer;
