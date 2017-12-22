@@ -1,9 +1,14 @@
 import React from 'react';
 import CanvasElements from './canvas_elements';
 import Branch from '../tree/branch';
+import Node from '../tree/node';
+import opts from '../opts';
 
-const CANVAS_WIDTH = 800;
-const CANVAS_HEIGHT = 800;
+ root.CANVAS_WIDTH = window.innerWidth;
+ root.CANVAS_HEIGHT = window.innerHeight;
+
+export const CANVAS_WIDTH = root.CANVAS_WIDTH;
+export const CANVAS_HEIGHT = root.CANVAS_HEIGHT;
 
 class Canvas extends React.Component {
     constructor() {
@@ -21,7 +26,10 @@ class Canvas extends React.Component {
 
     draw() {
         return  (
-            <Branch
+            <Branch parent={{end: new Node(0, 0, 0),
+            angle: { a: Math.PI / 2, b: -Math.PI / 2 },
+        size: opts.startSize,
+            iteration: 0}}
             />
         );
         
@@ -35,7 +43,7 @@ class Canvas extends React.Component {
                         this.draw()
                     }
                 </CanvasElements>
-                <button onClick={() => this.createRectangle()}>Create rectangle</button>
+                {/* <button onClick={}>Create rectangle</button> */}
             </div>
         )
     }
