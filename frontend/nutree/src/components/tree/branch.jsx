@@ -62,7 +62,7 @@ export default class Branch extends React.Component {
                 ctx.lineTo(end.screen.x, end.screen.y);
                 ctx.stroke();
                 // Konva specific method
-                ctx.fillStrokeShape(this);
+                // ctx.fillStrokeShape(this);
             }
         }
             />)

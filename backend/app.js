@@ -6,7 +6,7 @@ import {client_secret, client_id, callback_url} from './client.js';
 
 
 const app = express();
-// app.use(cors({origin: 'http://localhost:3000'}));
+app.use(cors({origin: 'http://localhost:3000'}));
 const middlewareConfig = mid => {
   mid.use(morgan('dev'));
   mid.use(bodyParser.json());

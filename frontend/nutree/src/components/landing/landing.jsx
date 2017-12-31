@@ -1,6 +1,7 @@
 import React from 'react';
 import Canvas from '../canvas/canvas';
 import { HashRouter, Switch, Link, Redirect } from 'react-router-dom';
+import genomeLink from '../../api_util/genome_link';
 
 
 
@@ -24,7 +25,10 @@ class LandingPage extends React.Component {
 
             <Link to="/signup"> Sign In/Register</Link>
             <br/>
-            <Link to="/home"> Upload Genetic Information</Link>
+            <Link to="/home"> Access Genetic Information</Link>
+                    <button onClick={genomeLink}>
+                        Upload Genetic Information
+                    </button>
         </p>
                 <div className="Canvas">
                     <Canvas />
