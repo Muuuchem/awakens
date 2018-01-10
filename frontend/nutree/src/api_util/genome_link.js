@@ -18,22 +18,28 @@ async function genomeLink() {
 //   // res.send(req.data);
 // });
 
-    const data = await fetch('http://127.0.0.1:5000/', {
+    await fetch('http://127.0.0.1:3000/', {
           method: 'GET',
-                headers: {
-                  'Access-Control-Allow-Origin': '*',
-                  'Accept': 'application/x-www-form-urlencoded',
-                  'Content-Type': 'application/x-www-form-urlencoded',
-                },
-                mode: 'no-cors',
+                // headers: {
+                //   'Access-Control-Allow-Origin': '*',
+                //   'Accept': 'application/x-www-form-urlencoded',
+                //   'Content-Type': 'application/x-www-form-urlencoded',
+                // },
+                // mode: 'no-cors',
               }
 
-             )
-            //  console.log(data);
+    ).then((response) => {
+      response.json().then((final) => {
+        console.log(final);
+        window.location.assign(final.authorize_url);
+      })
+    })
+            //  console.log(data.json());
+            //  debugger
             //  return data.then((res) => {
             //     console.log(res);
             // });
-            // window.location.assign(data);
+            // window.location.assign(data.data);
 
 }
 

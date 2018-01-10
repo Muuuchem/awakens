@@ -50,8 +50,8 @@ export default class Branch extends React.Component {
             this.state.start.z
         )
             let that = this;
-            
-            return (<Shape fill='#00D2FF'
+            console.log(end);
+            return (<Shape fill='#00D2FI'
             
         sceneFunc = {
             function(ctx) {
@@ -59,10 +59,12 @@ export default class Branch extends React.Component {
                 ctx.lineWidth = opts.size*that.state.start.screen.scale;
                 ctx.beginPath();
                 ctx.moveTo(that.state.start.screen.x, that.state.start.screen.y);
-                ctx.lineTo(end.screen.x, end.screen.y);
+                ctx.lineTo(end.x, end.y);
+                // ctx.moveTo(0, 0);
+                // ctx.lineTo(50, 50);
                 ctx.stroke();
                 // Konva specific method
-                // ctx.fillStrokeShape(this);
+                ctx.fillStrokeShape(this);
             }
         }
             />)

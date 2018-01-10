@@ -1,7 +1,9 @@
 import genomelink
+from flask_cors import CORS
 from client import client_id, client_secret, callback_url
 from flask import Flask, render_template, request, redirect, session, url_for, jsonify
 app = Flask(__name__)
+CORS(app, supports_credentials=True)
 
 
 @app.route('/')
@@ -14,7 +16,7 @@ def index():
         for name in ['iron']:
             reports.append(genomelink.Report.fetch(name=name, population='european', token=session['oauth_token']))
     print(authorize_url)
-    return redirect(authorize_url)
+    return authorize_url
     # return render_template('./frontend/public/index.html', authorize_url=authorize_url, reports=reports)
 
 @app.route('/callback')

@@ -29,7 +29,7 @@ class Canvas extends React.Component {
             <Branch parent={{end: new Node(0, 0, 0),
             angle: { a: Math.PI / 2, b: -Math.PI / 2 },
         size: opts.startSize,
-            iteration: 0}}
+            iteration: 1}}
             />
         );
         
