@@ -31,7 +31,7 @@ class Canvas extends React.Component {
     render() {
         return (
             <div>
-                <CanvasElements ref="canvas" width={this.state.canvasWidth} height={this.state.canvasWidth}>
+                <CanvasElements ref="canvas" width={this.state.canvasWidth} height={this.state.canvasHeight}>
                     {
                         this.draw()
                     }

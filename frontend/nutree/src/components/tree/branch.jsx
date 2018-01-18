@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layer, Rect, Stage, Shape } from 'react-konva';
+import { Layer, Rect, Stage, Shape, Group } from 'react-konva';
 import CanvasElements from '../canvas/canvas_elements';
 import opts from '../opts';
 import Node from './node';
@@ -117,7 +117,7 @@ export default class Branch {
 
     draw()  {
             let that = this;
-            console.log(that.start.screen.x, that.end.x, "CHECK THIS OUT", this.refs);
+            console.log(that.start.screen.x, that.end.x, "CHECK THIS OUT");
             return (<Shape
 
         sceneFunc = {
@@ -141,7 +141,9 @@ export default class Branch {
       console.log(this, "hey I am here and we are not drawing anything!!!");
       this.start.hasntCalculatedScreen = this.end.hasntCalculatedScreen = true;
         return (
+          <Group>
             this.draw()
+          </Group>
         );
     };
 };

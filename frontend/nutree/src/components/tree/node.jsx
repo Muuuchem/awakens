@@ -32,9 +32,7 @@ export default class Node {
         this.transformed.z = z;
 
         this.screen.scale = opts.focalLength / z;
-        console.log(this.screen.scale);
 
-        console.log(opts);
 
         this.screen.x = opts.vanishPoint.x + x * opts.focalLength / z;
         this.screen.y = opts.vanishPoint.y + y * opts.focalLength / z;
