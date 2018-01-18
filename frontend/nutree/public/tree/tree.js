@@ -1,10 +1,18 @@
-import * as Canvas from './canvas/canvas.js';
-import React from 'react';
-root.CANVAS_WIDTH = window.innerWidth;
-root.CANVAS_HEIGHT = window.innerHeight;
-let CANVAS_WIDTH = root.CANVAS_WIDTH;
-let CANVAS_HEIGHT = root.CANVAS_HEIGHT;
-const opts = {
+import opts from './opts';
+let canvas = document.getElementById("canvas");
+let w = canvas.width = window.innerWidth,
+    h = canvas.height = window.innerHeight,
+    ctx = canvas.getContext('2d'),
+
+    
+
+    rotY = 0,
+    rotYsin = 0,
+    rotYcos = 0,
+
+    lines = [];
+
+export const opts = {
     speed: 1,
     splitSizeProbabilityMultiplier: 1 / 1000,
     maxIterations: 8,
@@ -21,17 +29,14 @@ const opts = {
     rotYVel: .01,
     focalLength: 250,
     vanishPoint: {
-        x: CANVAS_WIDTH / 2,
-        y: CANVAS_HEIGHT / 2
+        x: w / 2,
+        y: h / 2
     },
     translations: {
         x: 0,
         y: 200,
         z: 400
-    },
-    rotY: 0,
-    rotYsin: 0,
-    rotYcos: 0,
+    }
 };
 
-export default opts;
+    console.log("Vanilla");
