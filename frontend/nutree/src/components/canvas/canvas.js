@@ -15,29 +15,37 @@ class Canvas extends React.Component {
         this.state = {
           canvasHeight: root.CANVAS_HEIGHT,
           canvasWidth: root.CANVAS_WIDTH,
+          context: null,
         };
         window.lines = [];
     }
 
-
+    componentDidMount() {
+      this.setState({ context: this.refs.canvas.context });
+      console.log(this.state.context);
+       // this.canvas = this.refs.canvas;
+       // this.state.context = this.canvas.context;
+       console.log(this.state.context);
+       debugger
+    }
 
     draw() {
+        // this.setState({ context: this.refs.canvas.context });
+        console.log(this.state.context);
         return (
-            <Limb location={{x: 0, y: 0, z: 0}}/>
+            <Limb context={this.state.context} location={{x: 0, y: 0, z: 0}}/>
         );
 
     }
 
     render() {
         return (
-            <div>
-                <CanvasElements ref="canvas" width={this.state.canvasWidth} height={this.state.canvasHeight}>
+                <CanvasElements width={this.state.canvasWidth} height={this.state.canvasHeight}>
                     {
                         this.draw()
                     }
                 </CanvasElements>
 
-            </div>
         );
     }
 }

@@ -6,7 +6,7 @@ class CanvasElements extends React.Component {
     render() {
         return (
             <Stage width={this.props.width} height={this.props.height}>
-                <Layer>
+                <Layer ref="canvas">
                     {
                         this.props.children
                     }

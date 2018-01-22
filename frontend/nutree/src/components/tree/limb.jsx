@@ -16,6 +16,7 @@ class Limb extends React.Component {
                 size: opts.startSize,
                 iteration: 0
             }),
+            context: props.context,
         };
         // this.rotY = 0;
 		    // this.rotYsin = 0;
@@ -26,18 +27,21 @@ class Limb extends React.Component {
     }
 
     componentDidMount() {
+      console.log(this.refs.canvas);
+        this.setState({context: this.props.context});
         let my_branch = this.state.parent_branch;
         window.lines.push(my_branch);
         this.loop();
+
     }
 
     loop() {
         window.requestAnimationFrame(this.loop);
-        // console.log(this.refs);
-        // const ctx = this.refs.canvas.getContext('2d');
-        // ctx.fillStyle = 'white';
-        // ctx.fillRect(0, 0, opts.CANVAS_WIDTH, opts.CANVAS_HEIGHT);
-
+        console.log(this.state.context);
+        this.state.context.fillStyle = 'white';
+        this.state.context.fillRect(0, 0, opts.CANVAS_WIDTH, opts.CANVAS_HEIGHT);
+        console.log(this.state.context);
+        // debugger
         opts.rotY += opts.rotYVel;
         opts.rotYcos = Math.cos(opts.rotY);
         opts.rotYsin = Math.sin(opts.rotY);

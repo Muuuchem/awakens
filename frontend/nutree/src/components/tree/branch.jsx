@@ -11,20 +11,23 @@ export default class Branch {
 
         let angleA = parent.angle.a;
         let angleB = parent.angle.b;
-        let sinA = Math.sin(angleA + parent.iteration * .8 * ((-Math.PI / 16) + ((Math.PI / 8) * Math.random())));
-        let sinB = Math.sin(angleB + parent.iteration * .8 * ((-Math.PI / 16) + ((Math.PI / 8) * Math.random())));
-        let cosA = Math.cos(angleA + parent.iteration * .8 * ((-Math.PI / 16) + ((Math.PI / 8) * Math.random())));
-        let cosB = Math.cos(angleB + parent.iteration * .8 * ((-Math.PI / 16) + ((Math.PI / 8) * Math.random())));
+
         this.iteration = parent.iteration + 1;
         this.start = parent.end;
         this.angle = {
-          a: angleA + parent.iteration * .8 * ((-Math.PI / 16) + ((Math.PI / 8) * Math.random())),
-          b: angleB + parent.iteration * .8 * ((-Math.PI / 16) + ((Math.PI / 8) * Math.random()))
+          a: angleA + this.iteration * opts.angleVariationIterationMultiplier * ( opts.baseAngleVariation + opts.addedAngleVariation * Math.random() ),
+          b: angleB + this.iteration * opts.angleVariationIterationMultiplier * ( opts.baseAngleVariation + opts.addedAngleVariation * Math.random() ),
         },
-        this.size = (.7 + .2*Math.random())*parent.size;
+        this.size = ( opts.baseSizeMultiplier + opts.addedSizeMultiplier * Math.random() ) * parent.size;
         this.color = 'hsla(hue, 80%, 50%, alp)'
           .replace( 'hue', (1 - ((parent.iteration+1)/opts.maxIterations)) *40)
           .replace( 'alp', 1 - ((parent.iteration+1)/opts.maxIterations));
+
+          let sinA = Math.sin(this.angle.a);
+          let sinB = Math.sin(this.angle.b);
+          let cosA = Math.cos(this.angle.a);
+          let cosB = Math.cos(this.angle.b);
+
         this.speed = {
                    x: opts.speed * cosA * sinB,
                    y: opts.speed * sinA * sinB,
@@ -35,6 +38,8 @@ export default class Branch {
                   parent.end.y,
                   parent.end.z
                 );
+
+
 
         this.done = false;
         this.time = 0;
@@ -141,9 +146,7 @@ export default class Branch {
       console.log(this, "hey I am here and we are not drawing anything!!!");
       this.start.hasntCalculatedScreen = this.end.hasntCalculatedScreen = true;
         return (
-          <Group>
             this.draw()
-          </Group>
         );
-    };
-};
+    }
+}
