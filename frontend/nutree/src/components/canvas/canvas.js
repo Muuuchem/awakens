@@ -1,5 +1,5 @@
 import React from 'react';
-import CanvasElements from './canvas_elements';
+// import CanvasElements from './canvas_elements';
 import Branch from '../tree/branch';
 import Node from '../tree/node';
 import opts from '../opts';
@@ -15,36 +15,32 @@ class Canvas extends React.Component {
         this.state = {
           canvasHeight: root.CANVAS_HEIGHT,
           canvasWidth: root.CANVAS_WIDTH,
-          context: null,
+          canvas: null,
         };
         window.lines = [];
+        this.draw = this.draw.bind(this);
     }
 
     componentDidMount() {
-      this.setState({ context: this.refs.canvas.context });
-      console.log(this.state.context);
-       // this.canvas = this.refs.canvas;
-       // this.state.context = this.canvas.context;
-       console.log(this.state.context);
-       debugger
+      console.log(this.refs.canvas);
+      // this.setState({ canvas: this.refs.canvas });
+      window.ctx = this.refs.canvas.getContext('2d');
+      this.draw();
     }
 
     draw() {
-        // this.setState({ context: this.refs.canvas.context });
-        console.log(this.state.context);
+        let can = this.state.canvas;
+        console.log(can);
         return (
-            <Limb context={this.state.context} location={{x: 0, y: 0, z: 0}}/>
+            new Limb({canvas: this.state.canvas, location: {x: 0, y: 0, z: 0}})
         );
 
     }
 
     render() {
         return (
-                <CanvasElements width={this.state.canvasWidth} height={this.state.canvasHeight}>
-                    {
-                        this.draw()
-                    }
-                </CanvasElements>
+
+                <canvas className="canvas" ref="canvas" width={this.state.canvasWidth} height={this.state.canvasHeight}/>
 
         );
     }

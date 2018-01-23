@@ -1,3 +1,4 @@
+
 // import React from 'react';
 import opts from '../opts';
 export default class Node {
@@ -17,7 +18,7 @@ export default class Node {
         var x = this.x,
             y = this.y,
             z = this.z;
-            console.log(opts.rotYsin);
+            console.log('CALCULATING');
         // rotate around Y
         var X = x;
         x = x * opts.rotYcos - z * opts.rotYsin;

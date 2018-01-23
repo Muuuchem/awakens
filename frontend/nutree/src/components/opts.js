@@ -1,4 +1,4 @@
-import * as Canvas from './canvas/canvas.js';
+import * as Canvas from './canvas/canvas';
 import React from 'react';
 root.CANVAS_WIDTH = window.innerWidth;
 root.CANVAS_HEIGHT = window.innerHeight;
@@ -7,7 +7,7 @@ let CANVAS_HEIGHT = root.CANVAS_HEIGHT;
 const opts = {
     speed: 1,
     splitSizeProbabilityMultiplier: 1 / 1000,
-    maxIterations: 8,
+    maxIterations: 5,
     startSize: 20,
     baseSizeMultiplier: .7,
     addedSizeMultiplier: .2,
@@ -29,6 +29,8 @@ const opts = {
         y: 200,
         z: 400
     },
+    CANVAS_HEIGHT: CANVAS_HEIGHT,
+    CANVAS_WIDTH: CANVAS_WIDTH,
     rotY: 0,
     rotYsin: 0,
     rotYcos: 0,
