@@ -2,12 +2,12 @@ import * as Canvas from './canvas/canvas';
 import React from 'react';
 root.CANVAS_WIDTH = window.innerWidth;
 root.CANVAS_HEIGHT = window.innerHeight;
-let CANVAS_WIDTH = root.CANVAS_WIDTH;
-let CANVAS_HEIGHT = root.CANVAS_HEIGHT;
+let CANVAS_WIDTH = root.CANVAS_WIDTH/2;
+let CANVAS_HEIGHT = root.CANVAS_HEIGHT/2;
 const opts = {
     speed: 1,
     splitSizeProbabilityMultiplier: 1 / 1000,
-    maxIterations: 5,
+    maxIterations: 7,
     startSize: 20,
     baseSizeMultiplier: .7,
     addedSizeMultiplier: .2,
@@ -26,8 +26,8 @@ const opts = {
     },
     translations: {
         x: 0,
-        y: 200,
-        z: 400
+        y: 0,
+        z: 600
     },
     CANVAS_HEIGHT: CANVAS_HEIGHT,
     CANVAS_WIDTH: CANVAS_WIDTH,

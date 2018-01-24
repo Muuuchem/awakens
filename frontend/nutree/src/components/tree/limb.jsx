@@ -26,7 +26,6 @@ class Limb {
     loop() {
 
         window.requestAnimationFrame(this.loop);
-        console.log(this);
         window.ctx.fillStyle = 'white';
         window.ctx.fillRect(0, 0, opts.CANVAS_WIDTH, opts.CANVAS_HEIGHT);
         opts.rotY += opts.rotYVel;

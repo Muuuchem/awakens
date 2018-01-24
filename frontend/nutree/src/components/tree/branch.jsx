@@ -24,10 +24,11 @@ export default class Branch {
           let cosA = Math.cos(this.angle.a);
           let cosB = Math.cos(this.angle.b);
 
+
         this.speed = {
-                   x: opts.speed * cosA * sinB,
-                   y: opts.speed * sinA * sinB,
-                   z: opts.speed * cosB
+                   x: opts.speed * sinA * cosB,
+                   y: opts.speed * cosA * cosB,
+                   z: opts.speed * sinB
                };
         this.end = this.closest = new Node(
                   parent.end.x,
@@ -50,7 +51,7 @@ export default class Branch {
 
             this.end.x += this.speed.x;
             this.end.y += this.speed.y;
-            this.end.z += this.speed.z;
+            this.end.z += Math.abs(this.speed.z);
 
             this.time += .1;
 

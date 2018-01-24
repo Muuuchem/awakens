@@ -2,6 +2,8 @@ import React from 'react';
 import Canvas from '../canvas/canvas';
 import { HashRouter, Switch, Link, Redirect } from 'react-router-dom';
 import genomeLink from '../../api_util/genome_link';
+import VitaminDetail from '../vitamin/vitamin_description';
+import RecipeMatches from '../vitamin/recipe_matches';
 
 
 
@@ -33,6 +35,9 @@ class LandingPage extends React.Component {
                 <div className="Canvas">
                     <Canvas />
                 </div>
+
+                <VitaminDetail/>
+                <RecipeMatches/>
             </div>
         );
     }

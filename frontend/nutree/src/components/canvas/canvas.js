@@ -13,8 +13,8 @@ class Canvas extends React.Component {
         super();
 
         this.state = {
-          canvasHeight: root.CANVAS_HEIGHT,
-          canvasWidth: root.CANVAS_WIDTH,
+          canvasHeight: root.CANVAS_HEIGHT/2,
+          canvasWidth: root.CANVAS_WIDTH/2,
           canvas: null,
         };
         window.lines = [];
@@ -22,7 +22,6 @@ class Canvas extends React.Component {
     }
 
     componentDidMount() {
-      console.log(this.refs.canvas);
       // this.setState({ canvas: this.refs.canvas });
       window.ctx = this.refs.canvas.getContext('2d');
       this.draw();
