@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Rubik');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans|Zilla+Slab');
 
 .App {
   text-align: center;
-  background: #85f7ff;
-  font-family: 'Playfair Display', serif;
+  background: #fffffffb;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.4;
 }
 
 .App-logo {
@@ -12,18 +13,24 @@
 }
 
 .App-header {
-  background-color: #455a64;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background-color: rgba(128, 128, 128, 0.438);
+  padding: 0.6em;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .App-title {
-  font-size: 1.5em;
+  width: min-content;
+  margin-left: 3%;
+  font-family: 'Zilla Slab', serif;
+  font-weight: bold;
+  color: #fff129;
 }
 
 .App-intro {
-  font-size: large;
+  padding: 1em;
 }
 
 @keyframes App-logo-spin {
@@ -36,8 +43,93 @@
 }
 
 div.Canvas {
+  display: none;
 }
 
 .vitamin_detail {
-  background-color: grey;
+}
+
+.button {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+  /* box-sizing: border-box; */
+  /* display: inline-block; */
+  padding: 0.5em 0.5em;
+  /* vertical-align: top; */
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  border-radius: 0.15em;
+  border: none;
+  cursor: pointer;
+  margin: 0.5em 0.5em;
+}
+
+.button:hover {
+  color: grey;
+}
+img {
+  height: 5em;
+  width: 7em;
+  border-radius: 3%;
+}
+
+.vitamin-text {
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1em;
+  padding-bottom: 2em;
+}
+
+.vitamin_name {
+  padding: 1em;
+}
+
+.vitamin {
+  width: 70%;
+  align-self: center;
+  margin: auto;
+  background-color: rgba(128, 128, 128, 0.438);
+  display: flex;
+  align-items: center;
+}
+
+.recipe_images {
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+  margin-top: 0;
+  width: 70%;
+  justify-content: space-between;
+}
+.recipe_img_name {
+  margin: 1em;
+}
+.recipes_preview {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  left: 15%;
+  width: 70vw;
+  justify-content: space-evenly;
+}
+
+.inner-text {
+  padding-left: 2em;
+  text-align: left;
+}
+
+.recipe_preview {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column-reverse;
+  justify-content: center;
+  height: 70%;
 }
