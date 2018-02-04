@@ -5,9 +5,9 @@ root.CANVAS_HEIGHT = window.innerHeight;
 let CANVAS_WIDTH = root.CANVAS_WIDTH/2;
 let CANVAS_HEIGHT = root.CANVAS_HEIGHT/2;
 const opts = {
-    speed: 1,
+    speed: .8,
     splitSizeProbabilityMultiplier: 1 / 1000,
-    maxIterations: 7,
+    maxIterations: 5,
     startSize: 20,
     baseSizeMultiplier: .7,
     addedSizeMultiplier: .2,

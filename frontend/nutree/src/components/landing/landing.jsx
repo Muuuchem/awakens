@@ -32,10 +32,8 @@ class LandingPage extends React.Component {
                         Upload Genetic Information
                     </button>
         </p>
-                <div className="Canvas">
-                    <Canvas />
-                </div>
 
+                <Canvas ref='canvas'/>
                 <VitaminDetail/>
                 <RecipeMatches/>
             </div>

@@ -18,7 +18,6 @@ export default class Node {
         var x = this.x,
             y = this.y,
             z = this.z;
-            console.log('CALCULATING');
         // rotate around Y
         var X = x;
         x = x * opts.rotYcos - z * opts.rotYsin;

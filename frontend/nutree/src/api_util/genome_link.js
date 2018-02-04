@@ -31,9 +31,10 @@ async function genomeLink() {
     ).then((response) => {
       response.json().then((final) => {
         console.log(final);
-        window.location.assign(final.authorize_url);
-      })
-    })
+        debugger
+        window.location.assign(final.authorize_url)
+      });
+    });
             //  console.log(data.json());
             //  debugger
             //  return data.then((res) => {
