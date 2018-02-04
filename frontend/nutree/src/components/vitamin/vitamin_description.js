@@ -15,13 +15,18 @@ class VitaminDetail extends React.Component {
   render() {
     return (
       <div className="vitamin">
-        <div className="vitamin_detail">
-          <div className="vitamin_name">{this.state.vitamin_name}</div>
-          <div className="vitamin-text">{this.state.vitamin_description}</div>
-        </div>
-        <div className="recipe_preview">
-          <button className="button">Recipe's for {this.state.vitamin_name}</button>
-          <img className="recipe_image" src="https://static.pexels.com/photos/46239/salmon-dish-food-meal-46239.jpeg" />
+        <div className="vitamin-inner">
+          <div className="vitamin_detail">
+            <div className="vitamin_name">{this.state.vitamin_name}</div>
+            <div className="vitamin-text">{this.state.vitamin_description}</div>
+          </div>
+          <div className="recipe_preview">
+            <button className="button">Recipe's for {this.state.vitamin_name}</button>
+            <img
+              className="recipe_image"
+              src="https://static.pexels.com/photos/46239/salmon-dish-food-meal-46239.jpeg"
+            />
+          </div>
         </div>
       </div>
     );

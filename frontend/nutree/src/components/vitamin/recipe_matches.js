@@ -21,7 +21,7 @@ class RecipeMatches extends React.Component {
       let a = (
         <div className="recipe_img_name">
           <img className="recipe_image" src={this.state.recipe_img_urls[n]} />
-          <div>{this.state.recipe_names[n]}</div>
+          <div className="recipe-name">{this.state.recipe_names[n]}</div>
         </div>
       );
       rows.push(a);
