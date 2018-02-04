@@ -194,6 +194,7 @@ img {
   display: flex;
   flex-direction: column;
   padding-left: 1em;
+  font-weight: 500;
 }
 .label {
   margin: 1em;
