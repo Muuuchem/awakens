@@ -19,9 +19,6 @@ class LandingPage extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">NuTree</h1>
-        </header>
         <p className="App-intro">
           Welcome to the NuTree, where we build you a personalized tree that maps your personal genetic blood nutrient
           levels!
