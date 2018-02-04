@@ -12,10 +12,6 @@ class LandingPage extends React.Component {
   //     );
   // }
 
-  // <div className="Canvas">
-  //   <Canvas />
-  // </div>
-
   render() {
     return (
       <div className="App">
@@ -35,7 +31,7 @@ class LandingPage extends React.Component {
             Upload Genetic Information
           </button>
         </p>
-
+        <Canvas />
         <VitaminDetail />
         <RecipeMatches />
       </div>
