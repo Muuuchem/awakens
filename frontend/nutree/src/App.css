@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans|Zilla+Slab');
+
 .App {
   text-align: center;
-  background: #ffc685;
+  background: #fffffffb;
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.4;
+  color: #0f1419;
 }
 
 .App-logo {
@@ -9,30 +14,200 @@
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+  background-color: rgba(128, 128, 128, 0.07);
+  padding: 0.6em;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .App-title {
-  font-size: 1.5em;
+  width: min-content;
+  margin-left: 3%;
+  font-family: 'Zilla Slab', serif;
+  font-weight: bold;
+  color: #00ada9;
 }
 
 .App-intro {
-  font-size: large;
+  padding: 1em;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 div.Canvas {
-	top: 200;
-	left: 0;
+  display: none;
 }
 
 .vitamin_detail {
-  background-color: grey;
+}
+
+.button {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+  /* box-sizing: border-box; */
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  vertical-align: center;
+  font-family: 'Zilla Slab', serif;
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  border-radius: 0.15em;
+  border: none;
+  cursor: pointer;
+  margin: 0.5em 0.5em;
+  height: max-content;
+}
+
+.button:hover {
+  color: grey;
+}
+img {
+  height: 5em;
+  width: 7em;
+  border-radius: 3%;
+}
+
+.vitamin-text {
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1em;
+  padding-bottom: 2em;
+}
+
+.vitamin_name {
+  padding: 1em;
+}
+
+.vitamin {
+  align-self: center;
+  margin: auto;
+  background-color: rgba(128, 128, 128, 0.07);
+  display: flex;
+  justify-content: center;
+}
+
+.vitamin-inner {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+
+.recipe_images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.recipe_img_name {
+  margin: 1em;
+}
+.recipes_preview {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0.07);
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.inner-text {
+  padding: 1em 1em 0 1em;
+  text-align: left;
+  font-weight: 500;
+}
+
+.recipe_preview {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column-reverse;
+  justify-content: center;
+  height: 70%;
+}
+
+.vitamin_name {
+  color: #ff3e0b;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 1em;
+}
+.recipe-name {
+  font-size: 0.9em;
+}
+
+.login-form-container {
+  width: 100%;
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.login-form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+}
+
+.login-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+}
+.big {
+  border: 1px solid darkslategray;
+  margin: 1em;
+  font-size: 2em;
+}
+
+.input-text {
+  font-size: 3.7em;
+  font-family: 'Zilla Slab', serif;
+  font-weight: bold;
+}
+
+.login-labels {
+  margin: 1em;
+  font-size: 1.5em;
+  font-family: 'Zilla Slab', serif;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.label {
+  margin: 0.5em;
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 1.4em;
+}
+.login-input {
+  width: 50%;
+  font-size: 1em;
+}
+
+.login-form {
+  width: 80%;
 }

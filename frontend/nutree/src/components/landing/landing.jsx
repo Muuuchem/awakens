@@ -5,42 +5,42 @@ import genomeLink from '../../api_util/genome_link';
 import VitaminDetail from '../vitamin/vitamin_description';
 import RecipeMatches from '../vitamin/recipe_matches';
 
-
-
 class LandingPage extends React.Component {
+  // linkSignIn() {
+  //     return (
+  //     <Redirect to="/signup"/>
+  //     );
+  // }
 
-    // linkSignIn() {
-    //     return (
-    //     <Redirect to="/signup"/>
-    //     );
-    // }
+  // <div className="Canvas">
+  //   <Canvas />
+  // </div>
 
-    render() {
-        return (
-            <div className="App">
-                <header className="App-header">
-                    <h1 className="App-title">NuTree</h1>
-                </header>
-                <p className="App-intro">
-                    Welcome to the NuTree, where we build you a personalized tree that maps your
-          personal genetic blood nutrient levels!
-
-            <Link to="/signup"> Sign In/Register</Link>
-            <br/>
-            <Link to="/home"> Access Genetic Information</Link>
-                    <button onClick={genomeLink}>
-                        Upload Genetic Information
-                    </button>
+  render() {
+    return (
+      <div className="App">
+        <p className="App-intro">
+          Welcome to the NuTree, where we build you a personalized tree that maps your personal genetic blood nutrient
+          levels!
+          <Link to="/signup" className="button">
+            {' '}
+            Sign In/Register
+          </Link>
+          <br />
+          <Link to="/home" className="button">
+            {' '}
+            Access Genetic Information
+          </Link>
+          <button className="button" onClick={genomeLink}>
+            Upload Genetic Information
+          </button>
         </p>
-                <div className="Canvas">
-                    <Canvas />
-                </div>
 
-                <VitaminDetail/>
-                <RecipeMatches/>
-            </div>
-        );
-    }
+        <VitaminDetail />
+        <RecipeMatches />
+      </div>
+    );
+  }
 }
 
 export default LandingPage;
