@@ -7,7 +7,7 @@ let CANVAS_HEIGHT = root.CANVAS_HEIGHT/2;
 const opts = {
     speed: .8,
     splitSizeProbabilityMultiplier: 1 / 1000,
-    maxIterations: 5,
+    maxIterations: 3,
     startSize: 20,
     baseSizeMultiplier: .7,
     addedSizeMultiplier: .2,
