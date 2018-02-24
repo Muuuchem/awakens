@@ -12,10 +12,6 @@ class LandingPage extends React.Component {
   //     );
   // }
 
-  // <div className="Canvas">
-  //   <Canvas />
-  // </div>
-
   render() {
     return (
       <div className="App">
