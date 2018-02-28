@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux';
-import nutritionReducer from './nutrition_reducer';
+import sessionReducer from './session_reducer';
 
 
 
 
 
 const rootReducer = combineReducers({
-    nutritionReducer,
+    sessionReducer,
 });
 
 export default rootReducer;
