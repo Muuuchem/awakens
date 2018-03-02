@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Canvas from './components/canvas/canvas';
-import SessionForm from './components/login/login_form';
+import SessionFormContainer from './components/login/login_container';
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './components/landing/landing';
 import Header from './components/header/header';
@@ -14,9 +14,10 @@ const App = () => {
     <div className="main-back">
       <Header />
       <Switch>  
+        <ProtectedRoute exact path="/" component={LandingPage} />
         <ProtectedRoute exact path="/home" component={LandingPage} />
-        <AuthRoute path="/login" component={SessionForm} />
-        <AuthRoute path="/signup" component={SessionForm} />
+        <AuthRoute path="/login" component={SessionFormContainer} />
+        <AuthRoute path="/signup" component={SessionFormContainer} />
       </Switch>
     </div>
   );

@@ -1,23 +1,23 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-class SessionForm extends React.Component {
+class LoginForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: '',
+      email: '',
       password: '',
     };
-    // this.handleSubmit = this.handleSubmit.bind(this);
-    // this.handleGuestSubmit = this.handleGuestSubmit.bind(this);
-    // this.sessionLink = this.sessionLink.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.sessionLink = this.sessionLink.bind(this);
+    this.renderErrors = this.renderErrors.bind(this);
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //     if (nextProps.loggedIn) {
-  //         this.props.history.push('/');
-  //     }
-  // }
+  componentWillReceiveProps(nextProps) {
+      if (nextProps.loggedIn) {
+          this.props.history.push('/');
+      }
+  }
 
   update(field) {
     return e =>
@@ -29,55 +29,58 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    // this.props.processForm(user);
+    this.props.processForm(user);
   }
 
-  handleGuestSubmit(e) {
-    e.preventDefault();
-    const user = { username: 'Guest', password: 'password' };
-    // this.props.processGuest(user);
-  }
 
-  // sessionLink(route) {
-  //     return () => {
-  //         this.props.receiveErrors([]);
-  //         this.props.history.push(route);
-  //     };
-  // }
+  sessionLink(route) {
+      return () => {
+          this.props.receiveErrors([]);
+          this.props.history.push(route);
+      };
+  }
 
   navLink() {
-    // if (this.props.formType === 'login') {
-    //     return <div className="link-switch"
-    //         onClick={this.sessionLink("/signup")}>sign up instead</div>;
-    // } else {
-    //     return <div className="link-switch"
-    //         onClick={this.sessionLink("/login")}>log in instead</div>;
-    // }
+    if (this.props.formType === 'login') {
+        return <button className="button big" type="button"
+            onClick={this.sessionLink("/signup")}>sign up instead</button>;
+    } else {
+      return <button className="button big" type="button"
+            onClick={this.sessionLink("/login")}>log in instead</button>;
+    }
   }
 
   renderErrors() {
-    return <ul className="render-errors" />;
+    console.log(this.props.errors.Error);
+    if (this.props.errors) {
+      return (
+        <div className="info-red">
+          {this.props.errors}
+        </div>
+      );
+    }
   }
 
   render() {
+    
     return (
       <div className="background">
         <h1 className="header1" />
         <div className="login-form-container">
           <form onSubmit={this.handleSubmit} className="login-form-box">
-            <p className="input-text">Sign In!</p>
+            <p className="input-text">{(this.props.formType === 'login') ? 'Log In' : 'Sign Up'}</p>
             <div className="login-form">
               <div className="login-labels">
-                <label className="label">
-                  Username:
+                <label className="label1">
+                  Email:
                   <input
                     type="text"
-                    value={this.state.username}
-                    onChange={this.update('username')}
+                    value={this.state.email}
+                    onChange={this.update('email')}
                     className="login-input"
                   />
                 </label>
-                <label className="label">
+                <label className="label2">
                   Password:
                   <input
                     type="password"
@@ -86,13 +89,14 @@ class SessionForm extends React.Component {
                     className="login-input"
                   />
                 </label>
+                {}
               </div>
               <div className="login-buttons">
                 <input className="button big" type="submit" value="Submit" />
-                <button className="button big" onClick={this.handleGuestSubmit}>
-                  Login As Guest
-                </button>
+                {this.navLink()}
               </div>
+              
+
             </div>
           </form>
         </div>
@@ -101,4 +105,4 @@ class SessionForm extends React.Component {
   }
 }
 
-export default withRouter(SessionForm);
+export default withRouter(LoginForm);

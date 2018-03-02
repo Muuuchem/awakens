@@ -15,6 +15,13 @@ const SessionReducer = (state = nullUser, action) => {
     switch (action.type) {
         case RECEIVE_CURRENT_USER:
             const currentUser = action.currentUser;
+            if (!!currentUser) {
+                sessionStorage.setItem('jwt', currentUser.data.token);
+            } else if(currentUser === null) {
+                console.log('CLEARED');
+                sessionStorage.clear();
+            }
+            console.log(sessionStorage);
             return merge({}, nullUser, {
                 currentUser
             });

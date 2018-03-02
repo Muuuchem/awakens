@@ -29,7 +29,6 @@ class Canvas extends React.Component {
 
     draw() {
         let can = this.state.canvas;
-        console.log(can);
         return (
             new Limb({canvas: this.state.canvas, location: {x: 0, y: 0, z: 0}})
         );

@@ -12,24 +12,29 @@ export const receiveErrors = errors => ({
     errors
 });
 
+
 export const signup = user => dispatch => (
-    APIUtil.signup(user).then(user1 => (
-        dispatch(receiveCurrentUser(user1))
-    ), err => (
-        dispatch(receiveErrors(err.responseJSON))
-    ))
+    APIUtil.signup(user).then(user1 => {
+        console.log(user1);
+        dispatch(receiveCurrentUser(user1));        
+    }, err => {
+        console.log(err);
+        dispatch(receiveErrors(err))
+    })
 );
 
 export const login = user => dispatch => (
-    APIUtil.login(user).then(user1 => (
+    APIUtil.login(user).then(user1 => {
+        console.log(user1, "WHERERS");
         dispatch(receiveCurrentUser(user1))
-    ), err => (
-        dispatch(receiveErrors(err.responseJSON))
-    ))
+    }, err => {
+        console.log(err);
+        dispatch(receiveErrors(err))
+    })
 );
 
-// export const logout = () => dispatch => (
-//     APIUtil.logout().then(user => (
-//         dispatch(receiveCurrentUser(null))
-//     ))
-// );
+export const logout = () => dispatch => (
+   () => (
+        dispatch(receiveCurrentUser(null))
+    )
+);
