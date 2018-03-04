@@ -232,18 +232,17 @@ img {
 }
 
 .style1 {
-  background-color: rgb(138, 152, 158);
-}
-
-.intro-content {
-  // flex-direction: column;
-  display: flex;
-  padding: 5%;
-  min-height: 90vh;
-  font-family: 'Fira Sans', sans-serif;
-  color: white;
-
-  h2 {
-    font-size: 2em;
+  background-image: url('./images/tree.jpg');
+  background-size: cover;
+  height: 90vh;
+  .intro-content {
+    flex-direction: column;
+    display: flex;
+    padding: 5%;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    h2 {
+      font-size: 2em;
+    }
   }
 }

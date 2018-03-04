@@ -190,13 +190,14 @@ img {
   width: 80%; }
 
 .style1 {
-  background-color: #8a989e; }
-
-.intro-content {
-  display: flex;
-  padding: 5%;
-  min-height: 90vh;
-  font-family: 'Fira Sans', sans-serif;
-  color: white; }
-  .intro-content h2 {
-    font-size: 2em; }
+  background-image: url("./images/tree.jpg");
+  background-size: cover;
+  height: 90vh; }
+  .style1 .intro-content {
+    flex-direction: column;
+    display: flex;
+    padding: 5%;
+    font-family: 'Fira Sans', sans-serif;
+    color: white; }
+    .style1 .intro-content h2 {
+      font-size: 2em; }
