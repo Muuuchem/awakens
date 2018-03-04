@@ -38,6 +38,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -55,6 +56,7 @@ div.Canvas {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
+
   /* box-sizing: border-box; */
   display: inline-block;
   padding: 0.5em 0.5em;
@@ -76,6 +78,7 @@ div.Canvas {
 .button:hover {
   color: grey;
 }
+
 img {
   height: 5em;
   width: 7em;
@@ -113,11 +116,14 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .recipe_img_name {
   margin: 1em;
 }
+
 .recipes_preview {
   position: absolute;
+
   /* bottom: 0; */
   display: flex;
   background-color: rgba(128, 128, 128, 0.07);
@@ -135,6 +141,7 @@ img {
 
 .recipe_preview {
   display: flex;
+
   /* align-items: center; */
   flex-direction: column-reverse;
   justify-content: center;
@@ -148,6 +155,7 @@ img {
   font-weight: bold;
   padding: 1em;
 }
+
 .recipe-name {
   font-size: 0.9em;
 }
@@ -177,6 +185,7 @@ img {
   height: 70vh;
   align-items: center;
 }
+
 .big {
   border: 1px solid darkslategray;
   margin: 1em;
@@ -197,6 +206,7 @@ img {
   flex-direction: column;
   font-weight: bold;
 }
+
 .label1 {
   margin: 0.5em;
   margin-left: 1.27em;
@@ -204,12 +214,14 @@ img {
   justify-content: space-evenly;
   line-height: 1.4em;
 }
+
 .label2 {
   margin: 0.5em;
   display: flex;
   justify-content: space-evenly;
   line-height: 1.4em;
 }
+
 .login-input {
   width: 50%;
   font-size: 1em;
@@ -217,4 +229,15 @@ img {
 
 .login-form {
   width: 80%;
+}
+
+.style1 {
+  background-color: rgb(138, 152, 158);
+}
+
+.intro-content {
+  flex-direction: column;
+  display: flex;
+  padding: 5%;
+  min-height: 90vh;
 }
