@@ -5,7 +5,7 @@ import genomeLink from '../../api_util/genome_link';
 import VitaminDetail from '../vitamin/vitamin_description';
 import RecipeMatches from '../vitamin/recipe_matches';
 
-class LandingPage extends React.Component {
+class HomePage extends React.Component {
   
 
   render() {
@@ -29,4 +29,4 @@ class LandingPage extends React.Component {
     }
 }
 
-export default LandingPage;
+export default HomePage;

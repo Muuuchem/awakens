@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import Canvas from './components/canvas/canvas';
 import SessionFormContainer from './components/login/login_container';
 import { Route, Switch } from 'react-router-dom';
-import LandingPage from './components/landing/landing';
+import HomePage from './components/home/home';
 import Header from './components/header/header';
 import { AuthRoute, ProtectedRoute } from './actions/route_actions';
 
@@ -14,8 +14,8 @@ const App = () => {
     <div className="main-back">
       <Header />
       <Switch>  
-        <ProtectedRoute exact path="/" component={LandingPage} />
-        <ProtectedRoute exact path="/home" component={LandingPage} />
+        <ProtectedRoute exact path="/" component={HomePage} />
+        <ProtectedRoute exact path="/home" component={HomePage} />
         <AuthRoute path="/login" component={SessionFormContainer} />
         <AuthRoute path="/signup" component={SessionFormContainer} />
       </Switch>
