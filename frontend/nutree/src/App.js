@@ -5,7 +5,7 @@ import SessionFormContainer from './components/login/login_container';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import HomePage from './components/home/home';
 import Header from './components/header/header';
-import LandingPage from './components/landing/landing';
+import LandingPage from './components/landing/landing.jsx';
 import { AuthRoute, ProtectedRoute } from './actions/route_actions';
 
 import './App.css';

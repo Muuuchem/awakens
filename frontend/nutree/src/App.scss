@@ -1,14 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans|Zilla+Slab");
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans|Zilla+Slab');
+
 .App {
   text-align: center;
   background: #fffffffb;
   font-family: 'Fira Sans', sans-serif;
   line-height: 1.4;
-  color: #0f1419; }
+  color: #0f1419;
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
+  height: 80px;
+}
 
 .App-header {
   background-color: rgba(128, 128, 128, 0.07);
@@ -16,32 +19,44 @@
   font-size: 2em;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+}
 
 .App-title {
   width: min-content;
   margin-left: 3%;
   font-family: 'Zilla Slab', serif;
   font-weight: bold;
-  color: #00ada9; }
+  color: #00ada9;
+}
 
 .App-intro {
-  padding: 1em; }
+  padding: 1em;
+}
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
+
   to {
-    transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}
 
 div.Canvas {
-  display: none; }
+  display: none;
+}
+
+.vitamin_detail {
+}
 
 .button {
   color: #000;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
+
   /* box-sizing: border-box; */
   display: inline-block;
   padding: 0.5em 0.5em;
@@ -57,84 +72,102 @@ div.Canvas {
   border: none;
   cursor: pointer;
   margin: 0.5em 0.5em;
-  height: max-content; }
+  height: max-content;
+}
 
 .button:hover {
-  color: grey; }
+  color: grey;
+}
 
 img {
   height: 5em;
   width: 7em;
-  border-radius: 3%; }
+  border-radius: 3%;
+}
 
 .vitamin-text {
   max-width: 90%;
   text-align: center;
   margin: auto;
   margin-bottom: 1em;
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+}
 
 .vitamin_name {
-  padding: 1em; }
+  padding: 1em;
+}
 
 .vitamin {
   align-self: center;
   margin: auto;
   background-color: rgba(128, 128, 128, 0.07);
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .vitamin-inner {
   display: flex;
   align-items: center;
-  width: 70%; }
+  width: 70%;
+}
 
 .recipe_images {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .recipe_img_name {
-  margin: 1em; }
+  margin: 1em;
+}
 
 .recipes_preview {
   position: absolute;
+
   /* bottom: 0; */
   display: flex;
   background-color: rgba(128, 128, 128, 0.07);
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+}
 
 .inner-text {
   padding: 1em 1em 0 1em;
   text-align: left;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 .recipe_preview {
   display: flex;
+
   /* align-items: center; */
   flex-direction: column-reverse;
   justify-content: center;
-  height: 70%; }
+  height: 70%;
+}
 
 .vitamin_name {
   color: #ff3e0b;
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.5em;
   font-weight: bold;
-  padding: 1em; }
+  padding: 1em;
+}
 
 .recipe-name {
-  font-size: 0.9em; }
+  font-size: 0.9em;
+}
 
 .login-form-container {
-  width: 100%; }
+  width: 100%;
+}
 
 .login-buttons {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .login-form-box {
   display: flex;
@@ -142,24 +175,28 @@ img {
   align-items: center;
   justify-content: center;
   align-content: center;
-  width: 100vw; }
+  width: 100vw;
+}
 
 .login-form-container {
   width: 100%;
   display: flex;
   justify-content: center;
   height: 70vh;
-  align-items: center; }
+  align-items: center;
+}
 
 .big {
   border: 1px solid darkslategray;
   margin: 1em;
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .input-text {
   font-size: 3.7em;
   font-family: 'Zilla Slab', serif;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .login-labels {
   margin: 1em;
@@ -167,36 +204,46 @@ img {
   font-family: 'Zilla Slab', serif;
   display: flex;
   flex-direction: column;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .label1 {
   margin: 0.5em;
   margin-left: 1.27em;
   display: flex;
   justify-content: space-evenly;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+}
 
 .label2 {
   margin: 0.5em;
   display: flex;
   justify-content: space-evenly;
-  line-height: 1.4em; }
+  line-height: 1.4em;
+}
 
 .login-input {
   width: 50%;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 .login-form {
-  width: 80%; }
+  width: 80%;
+}
 
 .style1 {
-  background-color: #8a989e; }
+  background-color: rgb(138, 152, 158);
+}
 
 .intro-content {
+  // flex-direction: column;
   display: flex;
   padding: 5%;
   min-height: 90vh;
   font-family: 'Fira Sans', sans-serif;
-  color: white; }
-  .intro-content h2 {
-    font-size: 2em; }
+  color: white;
+
+  h2 {
+    font-size: 2em;
+  }
+}
