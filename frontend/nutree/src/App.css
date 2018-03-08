@@ -1,4 +1,87 @@
+/* Variables */
+/* Fonts */
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans|Zilla+Slab");
+/* Mixins */
+/* Base Styles */
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  color: #999999;
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0; }
+
+#logOut {
+  padding: 0 1em;
+  margin: 0;
+  font-size: 3rem; }
+
+.style1 {
+  animation: bgFadeIn 1s ease-in both;
+  position: relative;
+  height: 90vh; }
+  .style1:before {
+    background: linear-gradient(rgba(3, 18, 28, 0.5), rgba(3, 18, 28, 0.5)), url("./images/tree.jpg");
+    background-color: #cccccc;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    content: ' ';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1; }
+
+@keyframes bgFadeIn {
+  0% {
+    background-color: white; }
+  100% {
+    background-color: rgba(255, 255, 255, 0); } }
+  .style1 .intro-content {
+    flex-direction: column;
+    display: flex;
+    padding: 10% 30% 10% 10%;
+    font-family: "Open Sans";
+    color: #ffffff;
+    height: 100%;
+    justify-content: space-around; }
+    .style1 .intro-content h2 {
+      font-size: 6.5rem;
+      line-height: 120%;
+      font-weight: bold;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #ffffff; }
+    .style1 .intro-content h3 {
+      color: #fff0a5;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 3.75rem;
+      margin: 0; }
+
+section {
+  padding: 2rem; }
+  section p {
+    font-size: 2.5rem;
+    line-height: 3.5rem; }
+    section p.lead-in {
+      font-size: 3rem; }
+      section p.lead-in:first-letter {
+        font-size: 7.25rem;
+        display: block;
+        float: left;
+        position: relative;
+        line-height: 0.1;
+        top: -0.2em; }
+
 .App {
   text-align: center;
   background: #fffffffb;
@@ -11,12 +94,10 @@
   height: 80px; }
 
 .App-header {
-  background-color: rgba(128, 128, 128, 0.07);
   padding: 0.6em;
-  font-size: 2em;
+  font-size: 4rem;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; }
+  justify-content: space-between; }
 
 .App-title {
   width: min-content;
@@ -188,16 +269,3 @@ img {
 
 .login-form {
   width: 80%; }
-
-.style1 {
-  background-image: url("./images/tree.jpg");
-  background-size: cover;
-  height: 90vh; }
-  .style1 .intro-content {
-    flex-direction: column;
-    display: flex;
-    padding: 5%;
-    font-family: 'Fira Sans', sans-serif;
-    color: white; }
-    .style1 .intro-content h2 {
-      font-size: 2em; }

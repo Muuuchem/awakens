@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans|Zilla+Slab');
+@import './scss/main.scss';
 
 .App {
   text-align: center;
@@ -14,12 +14,11 @@
 }
 
 .App-header {
-  background-color: rgba(128, 128, 128, 0.07);
+  // background-color: rgba(128, 128, 128, 0.07);
   padding: 0.6em;
-  font-size: 2em;
+  font-size: 4rem;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .App-title {
@@ -229,20 +228,4 @@ img {
 
 .login-form {
   width: 80%;
-}
-
-.style1 {
-  background-image: url('./images/tree.jpg');
-  background-size: cover;
-  height: 90vh;
-  .intro-content {
-    flex-direction: column;
-    display: flex;
-    padding: 5%;
-    font-family: 'Fira Sans', sans-serif;
-    color: white;
-    h2 {
-      font-size: 2em;
-    }
-  }
 }

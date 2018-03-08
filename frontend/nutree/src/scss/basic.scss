@@ -1,0 +1,69 @@
+/* Variables */
+
+$bg-image: './images/tree.jpg';
+$bg-overlay: rgba(3, 18, 28, 0.5);
+$primary-color: #ffffff;
+$primary-font: 'Open Sans';
+$secondary-color: #fff0a5;
+$secondary-font: 'Fira Sans', sans-serif;
+
+$alternative-font: 'Zilla Slab', serif;
+
+$body-color: #999999;
+$body-font: Helvetica, sans-serif;
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans|Zilla+Slab');
+
+/* Mixins */
+
+@mixin bg-images($image-path: './images/tree.jpg', $overlay-color: rgba(3, 18, 28, 0.5), $position: center center) {
+  animation: bgFadeIn 1s ease-in both;
+  position: relative;
+
+  &:before {
+    background: linear-gradient($overlay-color, $overlay-color), url($image-path);
+    background-color: #cccccc;
+    background-attachment: fixed;
+    background-position: $position;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    content: ' ';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  @keyframes bgFadeIn {
+    0% {
+      background-color: rgba(255, 255, 255, 1);
+    }
+
+    100% {
+      background-color: rgba(255, 255, 255, 0);
+    }
+  }
+}
+
+/* Base Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: $body-color;
+  font-family: $body-font;
+  font-size: 10px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
