@@ -6,9 +6,32 @@
   font-size: 3rem;
 }
 
+section {
+  padding: 8rem 14rem;
+
+  p {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+
+    &.lead-in {
+      font-size: 3rem;
+
+      &:first-letter {
+        font-size: 7.25rem;
+        display: block;
+        float: left;
+        position: relative;
+        line-height: 0.1;
+        top: -0.2em;
+      }
+    }
+  }
+}
+
 .style1 {
   @include bg-images($image-path: $bg-image, $overlay-color: $bg-overlay);
 
+  padding: 2rem;
   height: 80vh;
 
   .intro-content {
@@ -49,24 +72,24 @@
   }
 }
 
-section {
-  padding: 4rem 6rem;
+#nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: solid 1px black;
 
-  p {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+  ul {
+    display: flex;
+    width: 50%;
+    font-size: 2rem;
+    justify-content: space-between;
+  }
 
-    &.lead-in {
-      font-size: 3rem;
-
-      &:first-letter {
-        font-size: 7.25rem;
-        display: block;
-        float: left;
-        position: relative;
-        line-height: 0.1;
-        top: -0.2em;
-      }
-    }
+  a {
+    text-decoration: none;
+    color: #424242;
+    font-family: $secondary-font;
+    font-weight: 600;
   }
 }

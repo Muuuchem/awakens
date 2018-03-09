@@ -19,24 +19,25 @@ class LandingPage extends React.Component {
             <h3>Based on your genetic information</h3>
           </div>
         </section>
-
-        <section className="style2" id="one">
-          <div className="one-content">
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="#overview">Overview</a>
+            </li>
+            <li>
+              <a href="#how">How it works</a>
+            </li>
+            <li>
+              <a href="#science">The science</a>
+            </li>
+          </ul>
+        </nav>
+        <section className="style2" id="two">
+          <div className="two-content">
             <header>
               <h2>The sky is the limit.</h2>
             </header>
-            <ul className="intro">
-              <li>
-                You upload your 23andme, ancestory.com, or MyHeritage data through genomeLink.
-              </li>
-              <li>
-                NuTree connects with your genomeLink account to access nutrional genetic data.
-              </li>
-              <li>
-                Using your nutrional data, NuTree suggests recipes and builds your DNA personalized
-                three dimensional tree.
-              </li>
-            </ul>
+
             <p className="one">
               Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
               Quizote. This appears to add to the list of popular fallacies about coinages
@@ -45,8 +46,8 @@ class LandingPage extends React.Component {
           </div>
         </section>
 
-        <section className="style3" id="two">
-          <div className="two-content">
+        <section className="style3" id="three">
+          <div className="three-content">
             <header>
               <h2>The sky is the limit.</h2>
             </header>
@@ -57,6 +58,14 @@ class LandingPage extends React.Component {
             </p>
           </div>
         </section>
+        <ul className="intro">
+          <li>You upload your 23andme, ancestory.com, or MyHeritage data through genomeLink.</li>
+          <li>NuTree connects with your genomeLink account to access nutrional genetic data.</li>
+          <li>
+            Using your nutrional data, NuTree suggests recipes and builds your DNA personalized
+            three dimensional tree.
+          </li>
+        </ul>
       </div>
     );
   }

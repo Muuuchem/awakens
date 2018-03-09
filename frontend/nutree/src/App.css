@@ -20,9 +20,25 @@ body {
   margin: 0;
   font-size: 3rem; }
 
+section {
+  padding: 8rem 14rem; }
+  section p {
+    font-size: 2.5rem;
+    line-height: 3.5rem; }
+    section p.lead-in {
+      font-size: 3rem; }
+      section p.lead-in:first-letter {
+        font-size: 7.25rem;
+        display: block;
+        float: left;
+        position: relative;
+        line-height: 0.1;
+        top: -0.2em; }
+
 .style1 {
   animation: bgFadeIn 1s ease-in both;
   position: relative;
+  padding: 2rem;
   height: 80vh; }
   .style1:before {
     background: linear-gradient(rgba(3, 18, 28, 0.5), rgba(3, 18, 28, 0.5)), url("./images/tree.jpg");
@@ -75,20 +91,22 @@ body {
         padding: 0.5% 0;
         line-height: 130%; }
 
-section {
-  padding: 4rem 6rem; }
-  section p {
-    font-size: 2.5rem;
-    line-height: 3.5rem; }
-    section p.lead-in {
-      font-size: 3rem; }
-      section p.lead-in:first-letter {
-        font-size: 7.25rem;
-        display: block;
-        float: left;
-        position: relative;
-        line-height: 0.1;
-        top: -0.2em; }
+#nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: solid 1px black; }
+  #nav ul {
+    display: flex;
+    width: 50%;
+    font-size: 2rem;
+    justify-content: space-between; }
+  #nav a {
+    text-decoration: none;
+    color: #424242;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600; }
 
 .App {
   text-align: center;
