@@ -1,0 +1,109 @@
+/* Variables */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans:400,600,700|Zilla+Slab");
+/* Mixins */
+/* Base Styles */
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  color: #999999;
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0; }
+
+#logOut {
+  padding: 0 1em;
+  margin: 0;
+  font-size: 3rem; }
+
+section {
+  padding: 8rem 14rem; }
+  section p {
+    font-size: 2.5rem;
+    line-height: 3.5rem; }
+    section p.lead-in {
+      font-size: 3rem; }
+      section p.lead-in:first-letter {
+        font-size: 7.25rem;
+        display: block;
+        float: left;
+        position: relative;
+        line-height: 0.1;
+        top: -0.2em; }
+
+.style1 {
+  animation: bgFadeIn 1s ease-in both;
+  position: relative;
+  padding: 2rem;
+  height: 80vh; }
+  .style1:before {
+    background: linear-gradient(rgba(3, 18, 28, 0.5), rgba(3, 18, 28, 0.5)), url("./images/tree.jpg");
+    background-color: #cccccc;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    content: ' ';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1; }
+
+@keyframes bgFadeIn {
+  0% {
+    background-color: white; }
+  100% {
+    background-color: rgba(255, 255, 255, 0); } }
+  .style1 .intro-content {
+    flex-direction: column;
+    display: flex;
+    padding: 7% 30% 3% 10%;
+    font-family: "Open Sans";
+    color: #ffffff;
+    height: 100%;
+    justify-content: space-between; }
+    .style1 .intro-content h2 {
+      font-size: 6.5rem;
+      line-height: 120%;
+      font-weight: bold;
+      padding-bottom: 1rem; }
+    .style1 .intro-content h3 {
+      color: #fff0a5;
+      font-size: 6rem;
+      margin: 0;
+      letter-spacing: 6px;
+      line-height: 130%; }
+    .style1 .intro-content .intro {
+      font-size: 6rem;
+      font-family: "Fira Sans", sans-serif;
+      letter-spacing: 6px;
+      line-height: 130%; }
+      .style1 .intro-content .intro li {
+        padding: 0.5% 0;
+        line-height: 130%; }
+
+#nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: solid 1px black; }
+  #nav ul {
+    display: flex;
+    width: 50%;
+    font-size: 2rem;
+    justify-content: space-between; }
+  #nav a {
+    text-decoration: none;
+    color: #424242;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600; }
