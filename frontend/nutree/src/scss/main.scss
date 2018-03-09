@@ -14,7 +14,7 @@
   .intro-content {
     flex-direction: column;
     display: flex;
-    padding: 7% 30% 7% 10%;
+    padding: 7% 30% 3% 10%;
     font-family: $primary-font;
     color: $primary-color;
     height: 100%;
@@ -50,7 +50,7 @@
 }
 
 section {
-  padding: 2rem;
+  padding: 4rem 6rem;
 
   p {
     font-size: 2.5rem;
