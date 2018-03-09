@@ -26,7 +26,9 @@ export const signup = user => dispatch => (
 export const login = user => dispatch => (
     APIUtil.login(user).then(user1 => {
         console.log(user1, "WHERERS");
-        dispatch(receiveCurrentUser(user1))
+        dispatch(receiveCurrentUser(user1)).then((eh) => {
+            console.log(eh);
+        })
     }, err => {
         console.log(err);
         dispatch(receiveErrors(err))
