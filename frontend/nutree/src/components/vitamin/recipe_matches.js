@@ -12,7 +12,22 @@ class RecipeMatches extends React.Component {
         'http://www.technobuffalo.com/wp-content/uploads/2014/04/fast-food.jpg',
       ],
       recipe_names: ['Salmon Dinner', 'Creole Corn', 'Burger & Fries'],
+      vitamins: ['VITA_RAE', 'VITB12', 'MG'],
     };
+
+  }
+
+  componentDidMount() {
+    let recipes = this.props.getRecipes(this.state.vitamines).then((a) => {
+      console.log(a, this.props)
+    });
+    console.log(recipes);
+  }
+
+  componentWillReceiveProps() {
+      // console.log(a[0].data[0].recipe.image);
+      console.log(this.props);
+
   }
 
   render() {

@@ -3,9 +3,11 @@ import Canvas from '../canvas/canvas';
 import { HashRouter, Switch, Link, Redirect } from 'react-router-dom';
 import genomeLink from '../../api_util/genome_link';
 import VitaminDetail from '../vitamin/vitamin_description';
-import RecipeMatches from '../vitamin/recipe_matches';
+import RecipeContainer from '../vitamin/recipe_container';
 
 class HomePage extends React.Component {
+
+
   
 
   render() {
@@ -23,7 +25,7 @@ class HomePage extends React.Component {
         </p>
                 <Canvas ref="canvas"/>
                 <VitaminDetail/>
-                <RecipeMatches/>
+                <RecipeContainer/>
             </div>
         );
     }

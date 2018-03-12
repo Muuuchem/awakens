@@ -1,12 +1,16 @@
 import React from 'react';
 import GreetingContainer from './greeting_container';
 
+const signUp = () => {
+  this.props.history.push('/signup');
+}
+
 class Header extends React.Component {
   render() {
     return (
       <header className="App-header">
         <div className="App-title">
-          <h1>NuTree</h1>
+          <h1 onClick={signUp}>NuTree</h1>
           <div id="edamam-badge" data-color="transparent" />
         </div>
         <GreetingContainer />
