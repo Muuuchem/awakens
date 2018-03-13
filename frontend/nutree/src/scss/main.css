@@ -97,7 +97,7 @@ section {
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 2rem;
-  border-bottom: solid 1px black; }
+  border-bottom: solid 1px #424242; }
   #nav ul {
     display: flex;
     width: 70%;

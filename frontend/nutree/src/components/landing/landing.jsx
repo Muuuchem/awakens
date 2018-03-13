@@ -33,29 +33,56 @@ class LandingPage extends React.Component {
           </ul>
         </nav>
         <section className="style2" id="two">
-          <div className="two-content">
-            <header>
-              <h2>The sky is the limit.</h2>
-            </header>
-
-            <p className="one">
-              Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
-              Quizote. This appears to add to the list of popular fallacies about coinages
-              attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
-            </p>
+          <div className="two-content-1">
+            <div className="two-inner">
+              <header>
+                <h2>The sky is the limit.</h2>
+              </header>
+              <p className="two">
+                Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
+                Quizote. This appears to add to the list of popular fallacies about coinages
+                attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
+              </p>
+            </div>
+          </div>
+          <div className="two-content-2">
+            <div className="two-inner">
+              <header>
+                <h2>The sky is the limit.</h2>
+              </header>
+              <p className="two">
+                Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
+                Quizote. This appears to add to the list of popular fallacies about coinages
+                attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
+              </p>
+            </div>
           </div>
         </section>
 
         <section className="style3" id="three">
-          <div className="three-content">
-            <header>
-              <h2>The sky is the limit.</h2>
-            </header>
-            <p className="two">
-              Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
-              Quizote. This appears to add to the list of popular fallacies about coinages
-              attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
-            </p>
+          <div className="three-content-1">
+            <div className="three-inner">
+              <header>
+                <h2>The sky is the limit.</h2>
+              </header>
+              <p className="three">
+                Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
+                Quizote. This appears to add to the list of popular fallacies about coinages
+                attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
+              </p>
+            </div>
+          </div>
+          <div className="three-content-2">
+            <div className="three-inner">
+              <header>
+                <h2>The sky is the limit.</h2>
+              </header>
+              <p className="three">
+                Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
+                Quizote. This appears to add to the list of popular fallacies about coinages
+                attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
+              </p>
+            </div>
           </div>
         </section>
         <ul className="intro">
