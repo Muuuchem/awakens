@@ -77,11 +77,12 @@ section {
       font-weight: bold;
       padding-bottom: 1rem; }
     .style1 .intro-content h3 {
-      color: #fff0a5;
+      color: #ffeb3ba3;
       font-size: 6rem;
       margin: 0;
       letter-spacing: 6px;
-      line-height: 130%; }
+      line-height: 130%;
+      font-weight: 600; }
     .style1 .intro-content .intro {
       font-size: 6rem;
       font-family: "Fira Sans", sans-serif;
@@ -99,7 +100,7 @@ section {
   border-bottom: solid 1px black; }
   #nav ul {
     display: flex;
-    width: 50%;
+    width: 70%;
     font-size: 2rem;
     justify-content: space-between; }
   #nav a {
