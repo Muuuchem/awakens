@@ -14,26 +14,24 @@ class RecipeMatches extends React.Component {
       recipe_names: ['Salmon Dinner', 'Creole Corn', 'Burger & Fries'],
       vitamins: ['VITA_RAE', 'VITB12', 'MG'],
     };
-
   }
 
-  componentDidMount() {
-    let recipes = this.props.getRecipes(this.state.vitamines).then((a) => {
-      console.log(a, this.props)
-    });
-    console.log(recipes);
-  }
+  // componentDidMount() {
+  //   let recipes = this.props.getRecipes(this.state.vitamines).then((a) => {
+  //     console.log(a, this.props)
+  //   });
+  //   console.log(recipes);
+  // }
 
   componentWillReceiveProps() {
-      // console.log(a[0].data[0].recipe.image);
-      console.log(this.props);
-
+    // console.log(a[0].data[0].recipe.image);
+    console.log(this.props);
   }
 
   render() {
-    let rows = [];
-    [0, 1, 2].forEach(n => {
-      let a = (
+    const rows = [];
+    [0, 1, 2].forEach((n) => {
+      const a = (
         <div className="recipe_img_name">
           <img className="recipe_image" src={this.state.recipe_img_urls[n]} />
           <div className="recipe-name">{this.state.recipe_names[n]}</div>

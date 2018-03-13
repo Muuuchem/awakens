@@ -7,24 +7,23 @@
 }
 
 section {
-  padding: 8rem 14rem;
+  padding-top: 8rem;
+  color: #424242;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
 
   p {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-
-    &.lead-in {
-      font-size: 3rem;
-
-      &:first-letter {
-        font-size: 7.25rem;
-        display: block;
-        float: left;
-        position: relative;
-        line-height: 0.1;
-        top: -0.2em;
-      }
-    }
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 70%;
   }
 }
 
@@ -56,6 +55,7 @@ section {
       margin: 0;
       letter-spacing: 6px;
       line-height: 130%;
+      font-weight: 600;
     }
 
     .intro {
@@ -77,11 +77,11 @@ section {
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 2rem;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #424242;
 
   ul {
     display: flex;
-    width: 50%;
+    width: 70%;
     font-size: 2rem;
     justify-content: space-between;
   }
@@ -91,5 +91,54 @@ section {
     color: #424242;
     font-family: $secondary-font;
     font-weight: 600;
+  }
+}
+
+div.two-content {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    width: 55%;
+  }
+}
+
+div.three-content {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  align-items: center;
+
+  div {
+    width: 55%;
+  }
+}
+
+div.four-content {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  align-items: center;
+
+  div {
+    width: 55%;
+  }
+}
+
+.one {
+  margin-bottom: 7rem;
+}
+
+section.style {
+  min-height: 80vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  img {
+    height: 100%;
   }
 }
