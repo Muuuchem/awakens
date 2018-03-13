@@ -44,6 +44,11 @@ class LandingPage extends React.Component {
                 attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
               </p>
             </div>
+            <img
+              src="http://placehold.it/400x20&text=slide1"
+              alt="boohoo"
+              className="img-responsive"
+            />
           </div>
           <div className="two-content-2">
             <div className="two-inner">
@@ -56,6 +61,11 @@ class LandingPage extends React.Component {
                 attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
               </p>
             </div>
+            <img
+              src="http://placehold.it/400x20&text=slide1"
+              alt="boohoo"
+              className="img-responsive"
+            />
           </div>
         </section>
 
@@ -71,6 +81,11 @@ class LandingPage extends React.Component {
                 attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
               </p>
             </div>
+            <img
+              src="http://placehold.it/400x20&text=slide1"
+              alt="boohoo"
+              className="img-responsive"
+            />
           </div>
           <div className="three-content-2">
             <div className="three-inner">
@@ -83,6 +98,7 @@ class LandingPage extends React.Component {
                 attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
               </p>
             </div>
+            <img src="http://placehold.it/800x400" alt="boohoo" className="img-responsive" />
           </div>
         </section>
         <ul className="intro">

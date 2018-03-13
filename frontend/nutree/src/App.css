@@ -115,6 +115,10 @@ section {
   font-family: 'Fira Sans', sans-serif;
   line-height: 1.4;
   color: #0f1419; }
+  .App img {
+    height: 5em;
+    width: 7em;
+    border-radius: 3%; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -178,11 +182,6 @@ div.Canvas {
 .button:hover {
   color: grey; }
 
-img {
-  height: 5em;
-  width: 7em;
-  border-radius: 3%; }
-
 .vitamin-text {
   max-width: 90%;
   text-align: center;
@@ -222,6 +221,10 @@ img {
   justify-content: space-evenly;
   align-items: center;
   font-size: 0.9em; }
+  .recipes_preview img {
+    height: 5em;
+    width: 7em;
+    border-radius: 3%; }
 
 .inner-text {
   padding: 1em 1em 0 1em;
