@@ -21,19 +21,18 @@ body {
   font-size: 3rem; }
 
 section {
-  padding: 8rem 14rem; }
-  section p {
+  padding-top: 8rem;
+  color: #424242; }
+  section h2 {
     font-size: 2.5rem;
-    line-height: 3.5rem; }
-    section p.lead-in {
-      font-size: 3rem; }
-      section p.lead-in:first-letter {
-        font-size: 7.25rem;
-        display: block;
-        float: left;
-        position: relative;
-        line-height: 0.1;
-        top: -0.2em; }
+    margin-bottom: 2rem; }
+  section h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem; }
+  section p {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 70%; }
 
 .style1 {
   animation: bgFadeIn 1s ease-in both;
@@ -108,6 +107,42 @@ section {
     color: #424242;
     font-family: "Fira Sans", sans-serif;
     font-weight: 600; }
+
+div.two-content {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  align-items: center; }
+  div.two-content div {
+    width: 55%; }
+
+div.three-content {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  align-items: center; }
+  div.three-content div {
+    width: 55%; }
+
+div.four-content {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  align-items: center; }
+  div.four-content div {
+    width: 55%; }
+
+.one {
+  margin-bottom: 7rem; }
+
+section.style {
+  min-height: 80vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  section.style img {
+    height: 100%; }
 
 .App {
   text-align: center;
