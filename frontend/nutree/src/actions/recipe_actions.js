@@ -13,13 +13,16 @@ export const receiveErrors = errors => ({
 });
 
 
-export const receiveRecipes = nutrients => dispatch => (
+export const receiveRecipes = nutrients => dispatch => {
+    console.log(nutrients);
+    return (
     APIUtil.fetchRecipes(nutrients).then(recipes => {
-        console.log(recipes);
         dispatch(receiveRecipeTriplet(recipes));
     }, err => {
         console.log(err);
         dispatch(receiveErrors(err));
     })
 );
+
+};
 

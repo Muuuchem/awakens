@@ -9,12 +9,13 @@ const RecipeReducer = (state = {}, action) => {
     Object.freeze(state);
     switch (action.type) {
         case RECEIVE_RECIPE_TRIPLET:
-            const recipes = action.recipes;
+            const recipes = action.recipes[0].data;
             console.log(action.recipes, 'recipe');
             if (recipes) {
                 return merge({}, state, {
                     recipes
-                })} else {
+                });
+            } else {
                     return merge({}, state, {recipes: null});
                 }
         case RECEIVE_ERRORS:
