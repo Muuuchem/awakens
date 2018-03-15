@@ -14,7 +14,6 @@ class RecipeMatches extends React.Component {
       recipe_names: ['Salmon Dinner', 'Creole Corn', 'Burger & Fries'],
       recipes: null,
     };
-
   }
 
   async componentDidMount() {

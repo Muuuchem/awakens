@@ -21,19 +21,18 @@ body {
   font-size: 3rem; }
 
 section {
-  padding: 8rem 14rem; }
-  section p {
+  padding-top: 8rem;
+  color: #424242; }
+  section h2 {
     font-size: 2.5rem;
-    line-height: 3.5rem; }
-    section p.lead-in {
-      font-size: 3rem; }
-      section p.lead-in:first-letter {
-        font-size: 7.25rem;
-        display: block;
-        float: left;
-        position: relative;
-        line-height: 0.1;
-        top: -0.2em; }
+    margin-bottom: 2rem; }
+  section h3 {
+    font-size: 3rem;
+    margin-bottom: 4rem; }
+  section p {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 70%; }
 
 .style1 {
   animation: bgFadeIn 1s ease-in both;
@@ -77,11 +76,12 @@ section {
       font-weight: bold;
       padding-bottom: 1rem; }
     .style1 .intro-content h3 {
-      color: #fff0a5;
+      color: #ffeb3ba3;
       font-size: 6rem;
       margin: 0;
       letter-spacing: 6px;
-      line-height: 130%; }
+      line-height: 130%;
+      font-weight: 600; }
     .style1 .intro-content .intro {
       font-size: 6rem;
       font-family: "Fira Sans", sans-serif;
@@ -96,10 +96,10 @@ section {
   justify-content: center;
   padding-top: 3rem;
   padding-bottom: 2rem;
-  border-bottom: solid 1px black; }
+  border-bottom: solid 1px #424242; }
   #nav ul {
     display: flex;
-    width: 50%;
+    width: 70%;
     font-size: 2rem;
     justify-content: space-between; }
   #nav a {
@@ -108,12 +108,52 @@ section {
     font-family: "Fira Sans", sans-serif;
     font-weight: 600; }
 
+div.two-content {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+  align-items: center; }
+  div.two-content div {
+    width: 55%; }
+
+div.three-content {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  align-items: center; }
+  div.three-content div {
+    width: 55%; }
+
+div.four-content {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  align-items: center; }
+  div.four-content div {
+    width: 55%; }
+
+.one {
+  margin-bottom: 7rem; }
+
+section.style {
+  min-height: 80vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  section.style img {
+    height: 100%; }
+
 .App {
   text-align: center;
   background: #fffffffb;
   font-family: 'Fira Sans', sans-serif;
   line-height: 1.4;
   color: #0f1419; }
+  .App img {
+    height: 5em;
+    width: 7em;
+    border-radius: 3%; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -177,11 +217,6 @@ div.Canvas {
 .button:hover {
   color: grey; }
 
-img {
-  height: 5em;
-  width: 7em;
-  border-radius: 3%; }
-
 .vitamin-text {
   max-width: 90%;
   text-align: center;
@@ -221,6 +256,10 @@ img {
   justify-content: space-evenly;
   align-items: center;
   font-size: 0.9em; }
+  .recipes_preview img {
+    height: 5em;
+    width: 7em;
+    border-radius: 3%; }
 
 .inner-text {
   padding: 1em 1em 0 1em;
