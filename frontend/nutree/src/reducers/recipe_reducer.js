@@ -5,26 +5,31 @@ import {
     RECEIVE_ERRORS,
 } from '../actions/recipe_actions';
 
-const RecipeReducer = (state = {}, action) => {
+let defaultState = {
+    recipes: null,
+    errors: null,
+};
+
+const RecipeReducer = (state = defaultState, action) => {
     Object.freeze(state);
+    let newState = JSON.parse(JSON.stringify(state));
     switch (action.type) {
         case RECEIVE_RECIPE_TRIPLET:
             const recipes = action.recipes[0].data;
-            console.log(action.recipes, 'recipe');
             if (recipes) {
-                return merge({}, state, {
+                return merge({}, newState, {
                     recipes
                 });
             } else {
-                    return merge({}, state, {recipes: null});
+                    return merge({}, newState, {recipes: null});
                 }
         case RECEIVE_ERRORS:
             const errors = action.errors;
-            return merge({}, state, {
+            return merge({}, newState, {
                 errors
             });
         default:
-            return state;
+            return newState;
     }
 };
 

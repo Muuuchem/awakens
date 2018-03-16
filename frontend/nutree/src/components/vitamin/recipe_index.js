@@ -7,26 +7,31 @@ import { withRouter } from 'react-router';
 class RecipeIndex extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            vitamins: ['VITA_RAE', 'VITB12', 'MG'],
-        };
     }
 
     componentDidMount() {
-        this.props.getRecipes(this.state.vitamins);
+        this.props.getRecipes(['VITA_RAE', 'VITB12', 'MG']);
     }
 
-    componentWillReceiveProps(newProps) {
+    componentWillReceiveProps(newProps, Context) {
         if (!newProps.recipes) {
-            
+            console.log(newProps, 'new props fail');
+        } else {
+            console.log(newProps, 'NEW PROPS RECIEVED!!!');
         }
+        console.log(Context, 'new context');
+    }
+
+    componentWillUpdate(update) {
+        console.log(update, 'update2');
     }
 
 
     render() {
         const { recipes, currentUser } = this.props;
         let recipe_list = recipes ? recipes : [];
-        console.log(recipe_list);
+        console.log(recipe_list, 'recipe_index logging recipe_list');
+        console.log(this.state);
         return (
             <div>
                     {<RecipeMatches recipes={recipe_list} currentUser={currentUser}/>}
