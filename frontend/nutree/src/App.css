@@ -23,6 +23,9 @@ body {
 section {
   padding-top: 8rem;
   color: #424242; }
+  section h1 {
+    font-size: 9rem;
+    color: #689f38d9; }
   section h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem; }
@@ -76,7 +79,7 @@ section {
       font-weight: bold;
       padding-bottom: 1rem; }
     .style1 .intro-content h3 {
-      color: #ffeb3ba3;
+      color: #fff59d;
       font-size: 6rem;
       margin: 0;
       letter-spacing: 3px;
@@ -105,7 +108,7 @@ section {
     font-size: 3rem;
     justify-content: space-between; }
     #nav ul a {
-      color: #000000d9;
+      color: #000000bd;
       background-color: rgba(255, 255, 255, 0.9);
       -webkit-transition: color 0.15s ease-in-out;
       transition: color 0.15s ease-in-out;
@@ -129,8 +132,13 @@ div.two-content {
   display: flex;
   width: 65%;
   justify-content: space-between;
-  align-items: center; }
-  div.two-content div {
+  align-items: center;
+  height: 90vh; }
+  div.two-content .two-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  div.two-content ul {
     width: 55%; }
 
 div.three-content {
@@ -153,11 +161,12 @@ div.four-content {
   margin-bottom: 7rem; }
 
 section.style {
-  min-height: 90vh;
+  min-height: 99vh;
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-bottom: solid 1px #424242; }
   section.style img {
     height: 100%; }
 
@@ -194,7 +203,7 @@ section.style {
   margin-left: 5%;
   font-family: 'Zilla Slab', serif;
   font-weight: bold;
-  color: #00ada9;
+  color: #689f38a8;
   display: flex; }
   .App-title div {
     padding-left: 3%;
@@ -217,7 +226,7 @@ div.Canvas {
   display: none; }
 
 .button {
-  color: #000000d9;
+  color: #000000bd;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;

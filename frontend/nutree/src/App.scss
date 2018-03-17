@@ -1,256 +1,257 @@
-@import './scss/main.scss';
+@import "./scss/main.scss";
 
 .App {
-  text-align: center;
-  background: #fffffffb;
-  font-family: 'Fira Sans', sans-serif;
-  line-height: 1.4;
-  color: #0f1419;
+    text-align: center;
+    background: #fffffffb;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.4;
+    color: #0f1419;
 
-  img {
-    height: 5em;
-    width: 7em;
-    border-radius: 3%;
-  }
+    img {
+        height: 5em;
+        width: 7em;
+        border-radius: 3%;
+    }
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  // background-color: rgba(128, 128, 128, 0.07);
-  padding: 0.4em 0.6rem;
-  font-size: 4rem;
-  display: flex;
-  justify-content: space-between;
+    // background-color: rgba(128, 128, 128, 0.07);
+    padding: 0.4em 0.6rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-between;
 
-  a {
-    margin-right: 5%;
-    button {
-      font-size: 3rem;
-      padding: 0;
-      margin: 0;
-      height: unset;
+    a {
+        margin-right: 5%;
+
+        button {
+            font-size: 3rem;
+            padding: 0;
+            margin: 0;
+            height: unset;
+        }
     }
-  }
 }
 
 .App-title {
-  width: min-content;
-  margin-left: 5%;
-  font-family: 'Zilla Slab', serif;
-  font-weight: bold;
-  color: #00ada9;
-  display: flex;
+    width: min-content;
+    margin-left: 5%;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
+    color: #689f38a8;
+    display: flex;
 
-  div {
-    padding-left: 3%;
-    padding-top: 3%;
+    div {
+        padding-left: 3%;
+        padding-top: 3%;
 
-    img {
-      height: auto;
-      width: 120px;
-      border-radius: 0%;
+        img {
+            height: auto;
+            width: 120px;
+            border-radius: 0%;
+        }
     }
-  }
 }
 
 .App-intro {
-  padding: 1em;
+    padding: 1em;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
 
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 div.Canvas {
-  display: none;
+    display: none;
 }
 
 .button {
-  color: #000000d9;
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-transition: color 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out;
+    color: #000000bd;
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-transition: color 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out;
 
-  /* box-sizing: border-box; */
-  display: inline-block;
-  padding: 0.5em 0.5em;
-  vertical-align: center;
-  font-family: 'Zilla Slab', serif;
-  font-weight: 600;
-  font-size: 1em;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-  border-radius: 0.15em;
-  border: none;
-  cursor: pointer;
-  margin: 0.5em 0.5em;
-  height: max-content;
+    /* box-sizing: border-box; */
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    vertical-align: center;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    border-radius: 0.15em;
+    border: none;
+    cursor: pointer;
+    margin: 0.5em 0.5em;
+    height: max-content;
 }
 
 .button:hover {
-  color: grey;
+    color: grey;
 }
 
 .vitamin-text {
-  max-width: 90%;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 1em;
-  padding-bottom: 2em;
+    max-width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1em;
+    padding-bottom: 2em;
 }
 
 .vitamin_name {
-  padding: 1em;
+    padding: 1em;
 }
 
 .vitamin {
-  align-self: center;
-  margin: auto;
-  background-color: rgba(128, 128, 128, 0.07);
-  display: flex;
-  justify-content: center;
+    align-self: center;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.07);
+    display: flex;
+    justify-content: center;
 }
 
 .vitamin-inner {
-  display: flex;
-  align-items: center;
-  width: 70%;
+    display: flex;
+    align-items: center;
+    width: 70%;
 }
 
 .recipe_images {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .recipe_img_name {
-  margin: 1em;
+    margin: 1em;
 }
 
 .recipes_preview {
-  position: absolute;
+    position: absolute;
 
-  /* bottom: 0; */
-  display: flex;
-  background-color: rgba(128, 128, 128, 0.07);
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 0.9em;
+    /* bottom: 0; */
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.07);
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 0.9em;
 
-  img {
-    height: 5em;
-    width: 7em;
-    border-radius: 3%;
-  }
+    img {
+        height: 5em;
+        width: 7em;
+        border-radius: 3%;
+    }
 }
 
 .inner-text {
-  padding: 1em 1em 0 1em;
-  text-align: left;
-  font-weight: 500;
+    padding: 1em 1em 0 1em;
+    text-align: left;
+    font-weight: 500;
 }
 
 .recipe_preview {
-  display: flex;
+    display: flex;
 
-  /* align-items: center; */
-  flex-direction: column-reverse;
-  justify-content: center;
-  height: 70%;
+    /* align-items: center; */
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 70%;
 }
 
 .vitamin_name {
-  color: #ff3e0b;
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding: 1em;
+    color: #ff3e0b;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em;
 }
 
 .recipe-name {
-  font-size: 0.9em;
+    font-size: 0.9em;
 }
 
 .login-form-container {
-  width: 100%;
+    width: 100%;
 }
 
 .login-buttons {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .login-form-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
 }
 
 .login-form-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 70vh;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
 }
 
 .big {
-  border: 1px solid darkslategray;
-  margin: 1em;
-  font-size: 2em;
+    border: 1px solid darkslategray;
+    margin: 1em;
+    font-size: 2em;
 }
 
 .input-text {
-  font-size: 3.7em;
-  font-family: 'Zilla Slab', serif;
-  font-weight: bold;
+    font-size: 3.7em;
+    font-family: 'Zilla Slab', serif;
+    font-weight: bold;
 }
 
 .login-labels {
-  margin: 1em;
-  font-size: 1.5em;
-  font-family: 'Zilla Slab', serif;
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
+    margin: 1em;
+    font-size: 1.5em;
+    font-family: 'Zilla Slab', serif;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
 }
 
 .label1 {
-  margin: 0.5em;
-  margin-left: 1.27em;
-  display: flex;
-  justify-content: space-evenly;
-  line-height: 1.4em;
+    margin: 0.5em;
+    margin-left: 1.27em;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 1.4em;
 }
 
 .label2 {
-  margin: 0.5em;
-  display: flex;
-  justify-content: space-evenly;
-  line-height: 1.4em;
+    margin: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 1.4em;
 }
 
 .login-input {
-  width: 50%;
-  font-size: 1em;
+    width: 50%;
+    font-size: 1em;
 }
 
 .login-form {
-  width: 80%;
+    width: 80%;
 }

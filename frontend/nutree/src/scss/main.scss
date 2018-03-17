@@ -10,6 +10,11 @@ section {
   padding-top: 8rem;
   color: #424242;
 
+  h1 {
+    font-size: 9rem;
+    color: #689f38d9;
+  }
+
   h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -88,7 +93,7 @@ section {
     justify-content: space-between;
 
     a {
-      color: #000000d9;
+      color: #000000bd;
       background-color: rgba(255, 255, 255, 0.9);
       -webkit-transition: color 0.15s ease-in-out;
       transition: color 0.15s ease-in-out;
@@ -118,8 +123,15 @@ div.two-content {
   width: 65%;
   justify-content: space-between;
   align-items: center;
+  height: 90vh;
 
-  div {
+  .two-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  ul {
     width: 55%;
   }
 }
@@ -151,11 +163,12 @@ div.four-content {
 }
 
 section.style {
-  min-height: 90vh;
+  min-height: 99vh;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-bottom: solid 1px #424242;
 
   img {
     height: 100%;
