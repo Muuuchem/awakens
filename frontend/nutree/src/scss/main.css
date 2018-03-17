@@ -1,6 +1,6 @@
 /* Variables */
 /* Fonts */
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans:400,600,700|Zilla+Slab|IBM+Plex+Serif:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans:400,600,700|Zilla+Slab|IBM+Plex+Serif:400,400i,500,500i,600");
 /* Mixins */
 /* Base Styles */
 * {
@@ -37,7 +37,7 @@ section {
 .style1 {
   animation: bgFadeIn 1s ease-in both;
   position: relative;
-  padding: 2rem;
+  padding: 0;
   height: 82vh; }
   .style1:before {
     background: linear-gradient(rgba(3, 18, 28, 0.5), rgba(3, 18, 28, 0.5)), url("./images/tree.jpg");
@@ -65,7 +65,7 @@ section {
   .style1 .intro-content {
     flex-direction: column;
     display: flex;
-    padding: 7% 10% 5% 10%;
+    padding: 7% 10% 4.5% 10%;
     font-family: "Open Sans";
     color: #ffffff;
     height: 100%;
@@ -77,12 +77,13 @@ section {
       padding-bottom: 1rem; }
     .style1 .intro-content h3 {
       color: #ffeb3ba3;
-      font-size: 5rem;
+      font-size: 6rem;
       margin: 0;
-      letter-spacing: 5px;
+      letter-spacing: 3px;
       line-height: 130%;
-      font-weight: 600;
-      font-family: "Zilla Slab", serif; }
+      font-weight: 500;
+      font-style: italic;
+      font-family: "IBM Plex Serif", serif; }
     .style1 .intro-content .intro {
       font-size: 6rem;
       font-family: "Fira Sans", sans-serif;

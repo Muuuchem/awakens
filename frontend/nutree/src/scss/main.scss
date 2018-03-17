@@ -30,13 +30,13 @@ section {
 .style1 {
   @include bg-images($image-path: $bg-image, $overlay-color: $bg-overlay);
 
-  padding: 2rem;
+  padding: 0;
   height: 82vh;
 
   .intro-content {
     flex-direction: column;
     display: flex;
-    padding: 7% 10% 5% 10%;
+    padding: 7% 10% 4.5% 10%;
     font-family: $primary-font;
     color: $primary-color;
     height: 100%;
@@ -51,12 +51,13 @@ section {
 
     h3 {
       color: $secondary-color;
-      font-size: 5rem;
+      font-size: 6rem;
       margin: 0;
-      letter-spacing: 5px;
+      letter-spacing: 3px;
       line-height: 130%;
-      font-weight: 600;
-      font-family: $alternative-font;
+      font-weight: 500;
+      font-style: italic;
+      font-family: $second-alt-font;
     }
 
     .intro {
