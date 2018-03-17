@@ -36,7 +36,7 @@ section {
   .intro-content {
     flex-direction: column;
     display: flex;
-    padding: 7% 30% 3% 10%;
+    padding: 7% 10% 5% 10%;
     font-family: $primary-font;
     color: $primary-color;
     height: 100%;
@@ -51,17 +51,18 @@ section {
 
     h3 {
       color: $secondary-color;
-      font-size: 6rem;
+      font-size: 5rem;
       margin: 0;
-      letter-spacing: 6px;
+      letter-spacing: 5px;
       line-height: 130%;
       font-weight: 600;
+      font-family: $alternative-font;
     }
 
     .intro {
       font-size: 6rem;
       font-family: $secondary-font;
-      letter-spacing: 6px;
+      letter-spacing: 5px;
       line-height: 130%;
 
       li {
