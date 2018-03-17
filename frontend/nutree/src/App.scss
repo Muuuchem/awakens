@@ -25,11 +25,21 @@
   font-size: 4rem;
   display: flex;
   justify-content: space-between;
+
+  a {
+    margin-right: 5%;
+    button {
+      font-size: 3rem;
+      padding: 0;
+      margin: 0;
+      height: unset;
+    }
+  }
 }
 
 .App-title {
   width: min-content;
-  margin-left: 3%;
+  margin-left: 5%;
   font-family: 'Zilla Slab', serif;
   font-weight: bold;
   color: #00ada9;
@@ -65,11 +75,8 @@ div.Canvas {
   display: none;
 }
 
-.vitamin_detail {
-}
-
 .button {
-  color: #000;
+  color: #000000d9;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;

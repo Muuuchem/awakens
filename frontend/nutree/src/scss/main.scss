@@ -31,7 +31,7 @@ section {
   @include bg-images($image-path: $bg-image, $overlay-color: $bg-overlay);
 
   padding: 2rem;
-  height: 80vh;
+  height: 82vh;
 
   .intro-content {
     flex-direction: column;
@@ -75,22 +75,39 @@ section {
 #nav {
   display: flex;
   justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   border-bottom: solid 1px #424242;
 
   ul {
     display: flex;
-    width: 70%;
-    font-size: 2rem;
+    width: 65%;
+    font-size: 3rem;
     justify-content: space-between;
-  }
 
-  a {
-    text-decoration: none;
-    color: #424242;
-    font-family: $secondary-font;
-    font-weight: 600;
+    a {
+      color: #000000d9;
+      background-color: rgba(255, 255, 255, 0.9);
+      -webkit-transition: color 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: center;
+      font-family: 'Zilla Slab', serif;
+      font-weight: 600;
+      font-size: 3rem;
+      text-align: center;
+      text-decoration: none;
+      -webkit-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+      border-radius: 0.15em;
+      border: none;
+      cursor: pointer;
+    }
+
+    a:hover {
+      color: grey;
+    }
   }
 }
 
@@ -132,7 +149,7 @@ div.four-content {
 }
 
 section.style {
-  min-height: 80vh;
+  min-height: 90vh;
   align-items: center;
   display: flex;
   flex-direction: column;

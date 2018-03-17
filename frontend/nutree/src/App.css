@@ -38,7 +38,7 @@ section {
   animation: bgFadeIn 1s ease-in both;
   position: relative;
   padding: 2rem;
-  height: 80vh; }
+  height: 82vh; }
   .style1:before {
     background: linear-gradient(rgba(3, 18, 28, 0.5), rgba(3, 18, 28, 0.5)), url("./images/tree.jpg");
     background-color: #cccccc;
@@ -94,19 +94,34 @@ section {
 #nav {
   display: flex;
   justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   border-bottom: solid 1px #424242; }
   #nav ul {
     display: flex;
-    width: 70%;
-    font-size: 2rem;
+    width: 65%;
+    font-size: 3rem;
     justify-content: space-between; }
-  #nav a {
-    text-decoration: none;
-    color: #424242;
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 600; }
+    #nav ul a {
+      color: #000000d9;
+      background-color: rgba(255, 255, 255, 0.9);
+      -webkit-transition: color 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: center;
+      font-family: 'Zilla Slab', serif;
+      font-weight: 600;
+      font-size: 3rem;
+      text-align: center;
+      text-decoration: none;
+      -webkit-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+      border-radius: 0.15em;
+      border: none;
+      cursor: pointer; }
+    #nav ul a:hover {
+      color: grey; }
 
 div.two-content {
   display: flex;
@@ -136,7 +151,7 @@ div.four-content {
   margin-bottom: 7rem; }
 
 section.style {
-  min-height: 80vh;
+  min-height: 90vh;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -164,10 +179,17 @@ section.style {
   font-size: 4rem;
   display: flex;
   justify-content: space-between; }
+  .App-header a {
+    margin-right: 5%; }
+    .App-header a button {
+      font-size: 3rem;
+      padding: 0;
+      margin: 0;
+      height: unset; }
 
 .App-title {
   width: min-content;
-  margin-left: 3%;
+  margin-left: 5%;
   font-family: 'Zilla Slab', serif;
   font-weight: bold;
   color: #00ada9;
@@ -193,7 +215,7 @@ div.Canvas {
   display: none; }
 
 .button {
-  color: #000;
+  color: #000000d9;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
