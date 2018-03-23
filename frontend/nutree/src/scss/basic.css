@@ -1,6 +1,6 @@
 /* Variables */
 /* Fonts */
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans:400,600,700|Zilla+Slab|IBM+Plex+Serif:400,400i,500,500i,600");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Ubuntu:400,500|Vollkorn:400,600|Zilla+Slab");
 /* Mixins */
 /* Base Styles */
 * {
@@ -9,7 +9,7 @@
 html,
 body {
   color: #999999;
-  font-family: Helvetica, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 10px;
   font-weight: 100;
   margin: 0;

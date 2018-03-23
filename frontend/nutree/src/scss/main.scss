@@ -11,8 +11,9 @@ section {
   color: #424242;
 
   h1 {
-    font-size: 9rem;
+    font-size: 6rem;
     color: #689f38d9;
+    font-family: $alternative-font;
   }
 
   h2 {
@@ -26,9 +27,11 @@ section {
   }
 
   p {
-    font-size: 2rem;
-    line-height: 2rem;
-    width: 70%;
+    font-size: 2.2rem;
+    line-height: 3.5rem;
+    font-family: $primary-font;
+    color: #263238cf;
+    letter-spacing: -1px;
   }
 }
 
@@ -56,13 +59,11 @@ section {
 
     h3 {
       color: $secondary-color;
-      font-size: 6rem;
+      font-size: 5.5rem;
       margin: 0;
-      letter-spacing: 3px;
-      line-height: 130%;
+      letter-spacing: -2px;
       font-weight: 500;
-      font-style: italic;
-      font-family: $second-alt-font;
+      font-family: $alternative-font;
     }
 
     .intro {
@@ -120,15 +121,30 @@ section {
 
 div.two-content {
   display: flex;
-  width: 65%;
+  flex-direction: column;
+  margin: 0 17%;
   justify-content: space-between;
-  align-items: center;
-  height: 90vh;
+  min-height: 90vh;
 
-  .two-inner {
+  .list {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    flex-direction: column;
+    margin: 0 6rem 6rem 6rem;
+
+    img {
+      width: fit-content;
+      height: auto;
+      padding: 0 6rem;
+    }
+
+    div {
+      display: flex;
+      padding-top: 7%;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+    }
   }
 
   ul {
@@ -173,4 +189,7 @@ section.style {
   img {
     height: 100%;
   }
+}
+
+#overview {
 }

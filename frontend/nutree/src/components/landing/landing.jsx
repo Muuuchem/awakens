@@ -32,37 +32,64 @@ class LandingPage extends React.Component {
             </li>
           </ul>
         </nav>
-        <section className="style 2" id="overview">
+        <section className="style two" id="overview">
           <div className="two-content">
             <div className="two-inner">
-              <h1>Nutree Overview</h1>
+              <h1>Overview</h1>
             </div>
-            <ul className="intro">
-              <li>
-                NuTree connects with your genomeLink account to access nutrional genomic data.
-              </li>
-              
-              <li>
-                Using your personal nutrional data, NuTree suggests recipes with high levels of the
-                micronutrients your body craves most, based on predictative factors in your genomic
-                data.
-              </li>
-              <li>
-                Nutree also constructs a 3D tree animation, that serves as your unique nutritional
-                fingerprint, in order to help you visualize your natural nutritional needs.
-              </li>
-              <li>
-                The tree consists of 11 branches of various sizes, with branch sizes representative
-                of your predicted micronutrient levels.
-              </li>
-            </ul>
+            <div className="list">
+              <div>
+                <p>
+                  NuTree connects with your genomeLink account to access nutrional genomic data.
+                </p>
+                <img
+                  src={require('../../images/192px-DNA_Double_Helix.png')}
+                  alt="boohoo"
+                  className="img-responsive"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/192px-DNA_Double_Helix.png')}
+                  alt="boohoo"
+                  className="img-responsive"
+                />
+                <p>
+                  Using your personal nutrional data, NuTree suggests recipes with high levels of
+                  the micronutrients your body craves most, based on predictative factors in your
+                  genomic data.
+                </p>
+              </div>
+              <div>
+                <p>
+                  Nutree also constructs a 3D tree animation, that serves as your unique nutritional
+                  fingerprint, in order to help you visualize your natural nutritional needs.
+                </p>
+                <img
+                  src={require('../../images/192px-DNA_Double_Helix.png')}
+                  alt="boohoo"
+                  className="img-responsive"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/192px-DNA_Double_Helix.png')}
+                  alt="boohoo"
+                  className="img-responsive"
+                />
+                <p>
+                  The tree consists of 11 branches of various sizes, with branch sizes
+                  representative of your predicted micronutrient levels.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section className="style 3" id="how">
+        <section className="style three" id="how">
           <div className="three-content">
             <header>
-              <h1>How does Nutree work?</h1>
+              <h1>How does it work?</h1>
             </header>
             <h2>Nutritional data fingerprint:</h2>
             <ul>
@@ -107,8 +134,8 @@ class LandingPage extends React.Component {
           </div>
         </section>
 
-        <section className="style 2" id="science">
-          <div className="two-content">
+        <section className="style four" id="science">
+          <div className="four-content">
             <h1>What science is this project based upon?</h1>
             <ul className="intro">
               <li>
