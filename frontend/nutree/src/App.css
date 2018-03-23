@@ -21,7 +21,7 @@ body {
   font-size: 3rem; }
 
 section {
-  padding-top: 8rem;
+  padding-top: 4rem;
   color: #424242; }
   section h1 {
     font-size: 6rem;
@@ -34,11 +34,12 @@ section {
     font-size: 3rem;
     margin-bottom: 4rem; }
   section p {
-    font-size: 2.2rem;
-    line-height: 3.5rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
     font-family: "Vollkorn", serif;
     color: #263238cf;
-    letter-spacing: -1px; }
+    letter-spacing: -1px;
+    width: 55%; }
 
 .style1 {
   animation: bgFadeIn 1s ease-in both;
@@ -142,12 +143,11 @@ div.two-content {
     margin: 0 6rem 6rem 6rem; }
     div.two-content .list img {
       width: fit-content;
-      height: auto;
-      padding: 0 6rem; }
+      height: auto; }
     div.two-content .list div {
       display: flex;
-      padding-top: 7%;
-      justify-content: space-between;
+      padding-top: 2%;
+      justify-content: space-evenly;
       align-items: center;
       align-content: center; }
   div.two-content ul {
@@ -157,7 +157,8 @@ div.three-content {
   display: flex;
   justify-content: space-between;
   width: 65%;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   div.three-content div {
     width: 55%; }
 

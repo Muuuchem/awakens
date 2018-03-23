@@ -7,7 +7,7 @@
 }
 
 section {
-  padding-top: 8rem;
+  padding-top: 4rem;
   color: #424242;
 
   h1 {
@@ -27,11 +27,12 @@ section {
   }
 
   p {
-    font-size: 2.2rem;
-    line-height: 3.5rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
     font-family: $primary-font;
     color: #263238cf;
     letter-spacing: -1px;
+    width: 55%;
   }
 }
 
@@ -135,13 +136,12 @@ div.two-content {
     img {
       width: fit-content;
       height: auto;
-      padding: 0 6rem;
     }
 
     div {
       display: flex;
-      padding-top: 7%;
-      justify-content: space-between;
+      padding-top: 2%;
+      justify-content: space-evenly;
       align-items: center;
       align-content: center;
     }
@@ -157,6 +157,7 @@ div.three-content {
   justify-content: space-between;
   width: 65%;
   align-items: center;
+  flex-direction: column;
 
   div {
     width: 55%;

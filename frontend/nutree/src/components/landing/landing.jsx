@@ -43,15 +43,15 @@ class LandingPage extends React.Component {
                   NuTree connects with your genomeLink account to access nutrional genomic data.
                 </p>
                 <img
-                  src={require('../../images/192px-DNA_Double_Helix.png')}
-                  alt="boohoo"
+                  src={require('../../images/dna1.jpg')}
+                  alt="dna"
                   className="img-responsive"
                 />
               </div>
               <div>
                 <img
-                  src={require('../../images/192px-DNA_Double_Helix.png')}
-                  alt="boohoo"
+                  src={require('../../images/reciepe.jpg')}
+                  alt="dna"
                   className="img-responsive"
                 />
                 <p>
@@ -66,8 +66,8 @@ class LandingPage extends React.Component {
                   fingerprint, in order to help you visualize your natural nutritional needs.
                 </p>
                 <img
-                  src={require('../../images/192px-DNA_Double_Helix.png')}
-                  alt="boohoo"
+                  src={require('../../images/tree.png')}
+                  alt="tree"
                   className="img-responsive"
                 />
               </div>
