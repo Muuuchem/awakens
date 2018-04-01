@@ -153,14 +153,21 @@ div.two-content {
   div.two-content ul {
     width: 55%; }
 
-div.three-content {
-  display: flex;
-  justify-content: space-between;
-  width: 65%;
-  align-items: center;
-  flex-direction: column; }
-  div.three-content div {
-    width: 55%; }
+#how {
+  background: #e2e2e23b; }
+  #how div.three-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 17%;
+    justify-content: space-between;
+    min-height: 90vh; }
+    #how div.three-content h1 {
+      font-size: 5rem; }
+    #how div.three-content div {
+      display: flex;
+      flex-direction: column;
+      padding-top: 2%;
+      justify-content: space-evenly; }
 
 div.four-content {
   display: flex;

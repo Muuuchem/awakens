@@ -152,15 +152,26 @@ div.two-content {
   }
 }
 
-div.three-content {
-  display: flex;
-  justify-content: space-between;
-  width: 65%;
-  align-items: center;
-  flex-direction: column;
+#how {
+  background: #e2e2e23b;
 
-  div {
-    width: 55%;
+  div.three-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 17%;
+    justify-content: space-between;
+    min-height: 90vh;
+
+    h1 {
+      font-size: 5rem;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      padding-top: 2%;
+      justify-content: space-evenly;
+    }
   }
 }
 

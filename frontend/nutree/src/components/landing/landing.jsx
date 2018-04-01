@@ -89,48 +89,50 @@ class LandingPage extends React.Component {
         <section className="style three" id="how">
           <div className="three-content">
             <header>
-              <h1>How does it work?</h1>
+              <h1>Here's how it works.</h1>
             </header>
-            <h2>Nutritional data fingerprint:</h2>
-            <ul>
-              <li>
-                You upload your 23andme, ancestory.com, or MyHeritage data through genomeLink and
-                connect your account through this application.
-              </li>
-              <li>
-                Nutree uses your overall genomic nutritional profile in order to build a unique 3D
-                visualization of this data that you can then share with friends
-              </li>
-              <li>
-                {' '}
-                Larger branches near the bottom of the tree are representative of micronutrients
-                that are predicted to be naturally abundant in your bloodstream.
-              </li>
-              <li>
-                Smaller branches are representative of micronutrients that your body may have
-                naturally lower blood serum levels for.
-              </li>
-              <li>
-                {' '}
-                Your micronutrient tree visualization is 100% unique to your genetic information and
-                as a result is as personalized to you as your fingerprint!
-              </li>
-            </ul>
-            <h2>Recipe Suggestions:</h2>
-            <ul>
-              <li>
-                Based on genetic markers predictative of natural blood serum levels for 11 essential
-                micronutrients...
-              </li>
-              <li>
-                Nutree suggests recipes that are high in the three micronutrients that your genetic
-                data suggests your body might need the most of.
-              </li>
-              <li>
-                Custom search features are availible through Edamam recipe search API to help you
-                filter out potential allergens and other foods that are restricted from your diet.
-              </li>
-            </ul>
+            <div className="three-inner">
+              <h2>Nutritional data fingerprint:</h2>
+              <div class-name="fingerprint">
+                <p>
+                  You upload your 23andme, ancestory.com, or MyHeritage data through genomeLink and
+                  connect your account through this application.
+                </p>
+                <p>
+                  Nutree uses your overall genomic nutritional profile in order to build a unique 3D
+                  visuapzation of this data that you can then share with friends
+                </p>
+                <p>
+                  {' '}
+                  Larger branches near the bottom of the tree are representative of micronutrients
+                  that are predicted to be naturally abundant in your bloodstream.
+                </p>
+                <p>
+                  Smaller branches are representative of micronutrients that your body may have
+                  naturally lower blood serum levels for.
+                </p>
+                <p>
+                  {' '}
+                  Your micronutrient tree visualization is 100% unique to your genetic information and
+                  as a result is as personalized to you as your fingerprint!
+                </p>
+              </div>
+              <h2>Recipe Suggestions:</h2>
+              <ul>
+                <p>
+                  Based on genetic markers predictative of natural blood serum levels for 11 essential
+                  micronutrients...
+                </p>
+                <p>
+                  Nutree suggests recipes that are high in the three micronutrients that your genetic
+                  data suggests your body might need the most of.
+                </p>
+                <p>
+                  Custom search features are availible through Edamam recipe search API to help you
+                  filter out potential allergens and other foods that are restricted from your diet.
+                </p>
+              </ul>
+            </div>
           </div>
         </section>
 
