@@ -118,7 +118,7 @@ class LandingPage extends React.Component {
                 </div>
                 <div className="fingerimage">
                   <img
-                    src={require('../../images/dna2.jpg')}
+                    src={require('../../images/dna2.png')}
                     alt="dna"
                     className="img-responsive"
                   />

@@ -149,6 +149,7 @@ div.two-content {
       width: fit-content;
       border-radius: 2%;
       height: auto;
+      padding-bottom: 11%;
     }
     div {
       display: flex;
@@ -161,11 +162,10 @@ div.two-content {
       p {
         width: 90%;
         padding-bottom: 5%;
-      }
-      .fingerimage {
-        padding-top: 10%;
-        justify-content: flex-start;
-      }
+      } // .fingerimage {
+      //   padding-top: 10%;
+      //   justify-content: flex-start;
+      // }
     }
   }
 }
