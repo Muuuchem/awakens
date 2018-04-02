@@ -3,18 +3,17 @@
 $bg-image: './images/tree.jpg';
 $bg-overlay: rgba(3, 18, 28, 0.5);
 $primary-color: #ffffff;
-$primary-font: 'Open Sans';
-$secondary-color: #ffeb3ba3;
+$primary-font: 'Vollkorn', serif;
+$secondary-color: #fff59d;
 $secondary-font: 'Fira Sans', sans-serif;
-
 $alternative-font: 'Zilla Slab', serif;
 
 $body-color: #999999;
-$body-font: Helvetica, sans-serif;
+$body-font: 'Ubuntu', sans-serif;
 
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Open+Sans:400,600,700|Zilla+Slab');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600|Ubuntu:400,500|Vollkorn:400,600|Zilla+Slab');
 
 /* Mixins */
 

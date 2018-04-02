@@ -7,7 +7,9 @@ const signUp = (props) => {
 
 const sign = () => (
   <Link to="/login">
-    <button className="button" id="signIn">Sign In/Sign Up!</button>
+    <button className="button" id="signIn">
+      Sign In/Sign Up!
+    </button>
   </Link>
 );
 

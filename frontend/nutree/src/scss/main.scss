@@ -1,5 +1,4 @@
 @import './scss/basic.scss';
-
 #logOut {
   padding: 0 1em;
   margin: 0;
@@ -7,63 +6,62 @@
 }
 
 section {
-  padding-top: 8rem;
+  padding-top: 4rem;
   color: #424242;
-
+  h1 {
+    font-size: 6rem;
+    color: #689f38d9;
+    font-family: $alternative-font;
+  }
   h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
   }
-
   h3 {
     font-size: 3rem;
     margin-bottom: 4rem;
   }
-
   p {
-    font-size: 2rem;
-    line-height: 2rem;
-    width: 70%;
+    font-size: 2.3rem;
+    line-height: 3rem;
+    font-family: $primary-font;
+    color: #263238cf;
+    letter-spacing: -1px;
+    width: 55%;
   }
 }
 
 .style1 {
   @include bg-images($image-path: $bg-image, $overlay-color: $bg-overlay);
-
-  padding: 2rem;
-  height: 80vh;
-
+  padding: 0;
+  height: 82vh;
   .intro-content {
     flex-direction: column;
     display: flex;
-    padding: 7% 30% 3% 10%;
+    padding: 7% 10% 4.5% 10%;
     font-family: $primary-font;
     color: $primary-color;
     height: 100%;
     justify-content: space-between;
-
     h2 {
       font-size: 6.5rem;
       line-height: 120%;
       font-weight: bold;
       padding-bottom: 1rem;
     }
-
     h3 {
       color: $secondary-color;
-      font-size: 6rem;
+      font-size: 5.5rem;
       margin: 0;
-      letter-spacing: 6px;
-      line-height: 130%;
-      font-weight: 600;
+      letter-spacing: -2px;
+      font-weight: 500;
+      font-family: $alternative-font;
     }
-
     .intro {
       font-size: 6rem;
       font-family: $secondary-font;
-      letter-spacing: 6px;
+      letter-spacing: 5px;
       line-height: 130%;
-
       li {
         padding: 0.5% 0;
         line-height: 130%;
@@ -75,44 +73,84 @@ section {
 #nav {
   display: flex;
   justify-content: center;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   border-bottom: solid 1px #424242;
-
   ul {
     display: flex;
-    width: 70%;
-    font-size: 2rem;
+    width: 65%;
+    font-size: 3rem;
     justify-content: space-between;
-  }
-
-  a {
-    text-decoration: none;
-    color: #424242;
-    font-family: $secondary-font;
-    font-weight: 600;
+    a {
+      color: #000000bd;
+      background-color: rgba(255, 255, 255, 0.9);
+      -webkit-transition: color 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: center;
+      font-family: 'Zilla Slab', serif;
+      font-weight: 600;
+      font-size: 3rem;
+      text-align: center;
+      text-decoration: none;
+      -webkit-transition: all 0.15s ease-in-out;
+      transition: all 0.15s ease-in-out;
+      border-radius: 0.15em;
+      border: none;
+      cursor: pointer;
+    }
+    a:hover {
+      color: grey;
+    }
   }
 }
 
 div.two-content {
   display: flex;
-  width: 65%;
+  flex-direction: column;
+  margin: 0 17%;
   justify-content: space-between;
-  align-items: center;
-
-  div {
+  min-height: 90vh;
+  .list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 6rem 10rem 6rem;
+    img {
+      width: fit-content;
+      height: auto;
+    }
+    div {
+      display: flex;
+      padding-top: 7%;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+    }
+  }
+  ul {
     width: 55%;
   }
 }
 
-div.three-content {
-  display: flex;
-  justify-content: space-between;
-  width: 65%;
-  align-items: center;
-
-  div {
-    width: 55%;
+#how {
+  background: #fffde7;
+  div.three-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 17%;
+    justify-content: space-between;
+    min-height: 90vh;
+    h1 {
+      font-size: 5rem;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      padding-top: 2%;
+      justify-content: space-evenly;
+    }
   }
 }
 
@@ -121,7 +159,6 @@ div.four-content {
   justify-content: space-between;
   width: 65%;
   align-items: center;
-
   div {
     width: 55%;
   }
@@ -132,13 +169,14 @@ div.four-content {
 }
 
 section.style {
-  min-height: 80vh;
+  min-height: 99vh;
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
+  justify-content: space-between; // border-bottom: solid 1px #424242;
   img {
     height: 100%;
   }
 }
+
+#overview {}
