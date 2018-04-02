@@ -163,11 +163,20 @@ div.two-content {
     min-height: 90vh; }
     #how div.three-content h1 {
       font-size: 5rem; }
+    #how div.three-content img {
+      width: fit-content;
+      border-radius: 2%; }
     #how div.three-content div {
       display: flex;
       flex-direction: column;
       padding-top: 2%;
-      justify-content: space-evenly; }
+      justify-content: space-around; }
+    #how div.three-content #fingerprint {
+      flex-direction: row;
+      align-items: center; }
+      #how div.three-content #fingerprint p {
+        width: 90%;
+        padding-bottom: 5%; }
 
 div.four-content {
   display: flex;

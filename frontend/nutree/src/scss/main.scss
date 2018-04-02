@@ -145,11 +145,23 @@ div.two-content {
     h1 {
       font-size: 5rem;
     }
+    img {
+      width: fit-content;
+      border-radius: 2%;
+    }
     div {
       display: flex;
       flex-direction: column;
       padding-top: 2%;
-      justify-content: space-evenly;
+      justify-content: space-around; // margin: 6rem 6rem 10rem 6rem;
+    }
+    #fingerprint {
+      flex-direction: row;
+      align-items: center;
+      p {
+        width: 90%;
+        padding-bottom: 5%;
+      }
     }
   }
 }
