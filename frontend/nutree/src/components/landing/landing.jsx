@@ -125,20 +125,29 @@ class LandingPage extends React.Component {
                 </div>
               </div>
               <h2>Recipe Suggestions:</h2>
-              <ul>
-                <p>
+              <div id="fingerprint">
+                <div class-name="finger-inner">
+                  <p>
                   Based on genetic markers predictative of natural blood serum levels for 11 essential
                   micronutrients...
                 </p>
-                <p>
+                  <p>
                   Nutree suggests recipes that are high in the three micronutrients that your genetic
                   data suggests your body might need the most of.
                 </p>
-                <p>
+                  <p>
                   Custom search features are availible through Edamam recipe search API to help you
                   filter out potential allergens and other foods that are restricted from your diet.
                 </p>
-              </ul>
+                </div>
+                <div className="fingerimage">
+                  <img
+                  src={require('../../images/reciepe2.jpg')}
+                  alt="dna"
+                  className="img-responsive"
+                />
+                </div>
+              </div>
             </div>
           </div>
         </section>
