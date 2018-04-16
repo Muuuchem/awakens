@@ -32,225 +32,143 @@ class LandingPage extends React.Component {
             </li>
           </ul>
         </nav>
-        <section className="style2" id="two">
+        <section className="style two" id="overview">
           <div className="two-content">
-            <header>
-              <h1>
-                Nutree Overview
-              </h1>
-            </header>
-            <br/>
-            <ul className="intro">
-
-              <li>NuTree connects with your genomeLink account to access nutrional genomic data.</li>
-              <br/>
-              <li>
-                Using your personal nutrional data, NuTree suggests recipes with high levels of the micronutrients your body craves most, based on predictative factors in your genomic data.
-              </li>
-            <br/>
-              <li>
-                Nutree also constructs a 3D tree animation, that serves as your unique nutritional fingerprint, in order to help you visualize your natural nutritional needs.
-              </li>
-            <br/>
-              <li>
-                The tree consists of 11 branches of various sizes, with branch sizes representative of your predicted micronutrient levels.
-              </li>
-            </ul>
-            
+            <div className="two-inner">
+              <h1>Overview</h1>
+            </div>
+            <div className="list">
+              <div>
+                <p>
+                  NuTree connects with your genomeLink account to access nutrional genomic data.
+                </p>
+                <img
+                  src={require('../../images/dna1.jpg')}
+                  alt="dna"
+                  className="img-responsive"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/reciepe.jpg')}
+                  alt="dna"
+                  className="img-responsive"
+                />
+                <p>
+                  Using your personal nutrional data, NuTree suggests recipes with high levels of
+                  the micronutrients your body craves most, based on predictative factors in your
+                  genomic data.
+                </p>
+              </div>
+              <div>
+                <p>
+                  Nutree also constructs a 3D tree animation, that serves as your unique nutritional
+                  fingerprint, in order to help you visualize your natural nutritional needs.
+                </p>
+                <img
+                  src={require('../../images/tree.png')}
+                  alt="tree"
+                  className="img-responsive"
+                />
+              </div>
+              <div>
+                <img
+                  src={require('../../images/192px-DNA_Double_Helix.png')}
+                  alt="boohoo"
+                  className="img-responsive"
+                />
+                <p>
+                  The tree consists of 11 branches of various sizes, with branch sizes
+                  representative of your predicted micronutrient levels.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section className="style3" id="three">
+        <section className="style three" id="how">
           <div className="three-content">
             <header>
-              <h1>
-                How does Nutree work?
-              </h1>            
+              <h1>Here's how it works.</h1>
             </header>
-            <br/>
-            <h2>
-              Nutritional data fingerprint:
-          </h2>
-            <br/>
-            <ul>
-              <li>You upload your 23andme, ancestory.com, or MyHeritage data through genomeLink and connect your account through this application.</li>
-              <br/>
-              <li>
-                Nutree uses your overall genomic nutritional profile in order to build a unique 3D visualization of this data that you can then share with friends
-              </li>
-              <br/>
-              <li>
-                Larger branches near the bottom of the tree are representative of micronutrients that are predicted to be naturally abundant in your bloodstream.
-              </li>
-              <br/>
-              <li>
-                Smaller branches are representative of micronutrients that your body may have naturally lower blood serum levels for.
-              </li>
-              <br/>
-              <li>
-                Your micronutrient tree visualization is 100% unique to your genetic information and as a result is as personalized to you as your fingerprint!
-              </li>
-              <br/>
-            </ul>
-            <h2>
-              Recipe Suggestions:
-            </h2>
-            <br/>
-            <ul>
-            <li>
-                Based on genetic markers predictative of natural blood serum levels for 11 essential micronutrients...
-            </li>
-            <br/>
-            <li>
-                Nutree suggests recipes that are high in the three micronutrients that your genetic data suggests your body might need the most of.
-            </li>
-            <br/>
-              <li>
-                Custom search features are availible through Edamam recipe search API to help you filter out potential allergens and other foods that are restricted from your diet.
-            </li>
-            <br/>
-            </ul>
+            <div className="three-inner">
+              <h2>Nutritional data fingerprint:</h2>
+              <div class-name="fingerprint">
+                <p>
+                  You upload your 23andme, ancestory.com, or MyHeritage data through genomeLink and
+                  connect your account through this application.
+                </p>
+                <p>
+                  Nutree uses your overall genomic nutritional profile in order to build a unique 3D
+                  visuapzation of this data that you can then share with friends
+                </p>
+                <p>
+                  {' '}
+                  Larger branches near the bottom of the tree are representative of micronutrients
+                  that are predicted to be naturally abundant in your bloodstream.
+                </p>
+                <p>
+                  Smaller branches are representative of micronutrients that your body may have
+                  naturally lower blood serum levels for.
+                </p>
+                <p>
+                  {' '}
+                  Your micronutrient tree visualization is 100% unique to your genetic information and
+                  as a result is as personalized to you as your fingerprint!
+                </p>
+              </div>
+              <h2>Recipe Suggestions:</h2>
+              <ul>
+                <p>
+                  Based on genetic markers predictative of natural blood serum levels for 11 essential
+                  micronutrients...
+                </p>
+                <p>
+                  Nutree suggests recipes that are high in the three micronutrients that your genetic
+                  data suggests your body might need the most of.
+                </p>
+                <p>
+                  Custom search features are availible through Edamam recipe search API to help you
+                  filter out potential allergens and other foods that are restricted from your diet.
+                </p>
+              </ul>
+            </div>
           </div>
         </section>
 
-        <section className="style2" id="two">
-          <div className="two-content">
-            <header>
-              <h1>
-          What science is this project based upon?
-              </h1>
-            </header>
-            <br />
+        <section className="style four" id="science">
+          <div className="four-content">
+            <h1>What science is this project based upon?</h1>
             <ul className="intro">
-
-              <li>            The scientific connections between genomic data and nutrient levels used in this application are based upon genome-wide association studies.
-</li>
-              <br />
               <li>
-            By analyzing genomic data from large samples of the population, researchers have discovered links between certain genetic markers and serum nutrient levels.
+                The scientific connections between genomic data and nutrient levels used in this
+                application are based upon genome-wide association studies.
               </li>
-              <br />
               <li>
-            Be aware that genetic markers predictative of blood serum nutrient levels are by no means definitively reflective of your current micronutrient levels.
+                By analyzing genomic data from large samples of the population, researchers have
+                discovered links between certain genetic markers and serum nutrient levels.
               </li>
-              <br />
               <li>
-            The human body is a complicated biochemical system and many other factors such as diet and exercise also contribute to a person's serum nutrient levels at any given time.
+                {' '}
+                Be aware that genetic markers predictative of blood serum nutrient levels are by no
+                means definitively reflective of your current micronutrient levels.
               </li>
-              <br/>
               <li>
-            Nutree is meant to provide insight into what types of nutrients your body might require higher levels of, while suggesting foods that may help your body fulfill nutritional requirements.
+                The human body is a complicated biochemical system and many other factors such as
+                diet and exercise also contribute to a person's serum nutrient levels at any given
+                time.
               </li>
-              <br/>
               <li>
-            Information and statements regarding dietary supplements have not been evaluated by the Food and Drug Administration and are not intended to diagnose, treat, cure, or prevent any disease.
+                Nutree is meant to provide insight into what types of nutrients your body might
+                require higher levels of, while suggesting foods that may help your body fulfill
+                nutritional requirements.
+              </li>
+              <li>
+                Information and statements regarding dietary supplements have not been evaluated by
+                the Food and Drug Administration and are not intended to diagnose, treat, cure, or
+                prevent any disease.
               </li>
             </ul>
-          </div>
-        </section>
-
-        <section className="style 2" id="two">
-          <div className="two-content one">
-            <div className="two-inner">
-              <h2>The sky is the limit.</h2>
-              <h3>Learn what you need to know</h3>
-              <p className="two">
-                Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
-                Quizote. This appears to add to the list of popular fallacies about coinages
-                attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
-              </p>
-            </div>
-            <img
-              src={require('../../images/192px-DNA_Double_Helix.png')}
-              alt="boohoo"
-              className="img-responsive"
-            />
-          </div>
-          <div className="two-content two">
-            <img
-              src={require('../../images/192px-DNA_Double_Helix.png')}
-              alt="boohoo"
-              className="img-responsive"
-            />
-            <div className="two-inner">
-              <h2>The sky is the limit.</h2>
-              <h3>Learn what you need to know</h3>
-              <p className="two">
-                Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
-                Quizote. This appears to add to the list of popular fallacies about coinages
-                attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="style 3" id="three">
-          <div className="three-content one">
-            <div className="three-inner">
-              <h2>The sky is the limit.</h2>
-              <h3>Learn what you need to know</h3>
-              <p className="three">
-                Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
-                Quizote. This appears to add to the list of popular fallacies about coinages
-                attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
-              </p>
-            </div>
-            <img
-              src={require('../../images/192px-DNA_Double_Helix.png')}
-              alt="boohoo"
-              className="img-responsive"
-            />
-          </div>
-          <div className="three-content two">
-            <img
-              src={require('../../images/192px-DNA_Double_Helix.png')}
-              alt="boohoo"
-              className="img-responsive"
-            />
-            <div className="three-inner">
-              <h2>The sky is the limit.</h2>
-              <h3>Learn what you need to know</h3>
-              <p className="three">
-                Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
-                Quizote. This appears to add to the list of popular fallacies about coinages
-                attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="style 4" id="four">
-          <div className="four-content one">
-            <div className="four-inner">
-              <h2>The sky is the limit.</h2>
-              <h3>Learn what you need to know</h3>
-              <p className="four">
-                Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
-                Quizote. This appears to add to the list of popular fallacies about coinages
-                attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
-              </p>
-            </div>
-            <img
-              src={require('../../images/192px-DNA_Double_Helix.png')}
-              alt="boohoo"
-              className="img-responsive"
-            />
-          </div>
-          <div className="four-content two">
-            <img
-              src={require('../../images/192px-DNA_Double_Helix.png')}
-              alt="boohoo"
-              className="img-responsive"
-            />
-            <div className="four-inner">
-              <h2>The sky is the limit.</h2>
-              <h3>Learn what you need to know</h3>
-              <p className="four">
-                Some resources claim that 'the sky's the limit' was coined by Cervantes in Don
-                Quizote. This appears to add to the list of popular fallacies about coinages
-                attributed to Cervantes; for example, 'don’t put all your eggs in one basket'.
-              </p>
-            </div>
           </div>
         </section>
       </div>
