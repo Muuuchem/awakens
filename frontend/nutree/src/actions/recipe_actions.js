@@ -18,11 +18,11 @@ export const receiveRecipes = nutrients => dispatch => {
     return (
     APIUtil.fetchRecipes(nutrients).then(recipes => {
         dispatch(receiveRecipeTriplet(recipes));
-    }, err => {
+    }).catch((err) => {
         console.log(err);
         dispatch(receiveErrors(err));
-    })
-);
+    }));
+
 
 };
 

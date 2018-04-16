@@ -17,19 +17,19 @@ const RecipeReducer = (state = defaultState, action) => {
         case RECEIVE_RECIPE_TRIPLET:
             const recipes = action.recipes[0].data;
             if (recipes) {
-                return merge({}, newState, {
+                return merge({}, state, {
                     recipes
                 });
             } else {
-                    return merge({}, newState, {recipes: null});
+                    return merge({}, state, {recipes: null});
                 }
         case RECEIVE_ERRORS:
             const errors = action.errors;
-            return merge({}, newState, {
+            return merge({}, state, {
                 errors
             });
         default:
-            return newState;
+            return state;
     }
 };
 

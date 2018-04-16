@@ -8,7 +8,9 @@ class RecipeMatches extends React.Component {
 
   componentDidMount() {
     
-    console.log(this.state);
+    this.props.getRecipes(['VITA_RAE', 'VITB12', 'MG']).then(() => {
+      console.log(this.props);
+    });
     // await this.props.recipes ? console.log(this.props.recipes.recipes) : console.log('noresults yetasdlkfj')
   }
 
@@ -16,6 +18,11 @@ class RecipeMatches extends React.Component {
   componentWillReceiveProps(newProps, Context) {
     console.log(this.props.recipes, newProps, 'NEW PROPS');
     console.log(Context, 'new context2');
+    if (newProps.recipes) {
+      this.setState({recipes: newProps.recipes});
+    } else {
+      console.log('somewhere');
+    }
   }
 
   componentWillUpdate(update) {
@@ -31,9 +38,9 @@ class RecipeMatches extends React.Component {
       let recipe_names = ['Salmon Dinner', 'Creole Corn', 'Burger & Fries'];
     let rows = [];
     console.log(this.props.recipes, 'checkpropsthru');
-    let condition = this.props.recipes.length === 0;
-    let recipe_images =  condition ? recipe_img_urls : this.props.recipes;
-    let recipe_name = condition ? recipe_names : this.props.recipes;
+    let condition = this.props.recipes;
+    let recipe_images =  this.props.recipes || recipe_img_urls;
+    let recipe_name = this.props.recipes || recipe_names;
     console.log(this.props);
     [0, 1, 2].forEach(n => {
       let a = (
