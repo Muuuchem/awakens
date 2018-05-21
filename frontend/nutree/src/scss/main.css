@@ -172,17 +172,12 @@ div.two-content {
       display: flex;
       flex-direction: column;
       padding-top: 2%;
-<<<<<<< HEAD
-      padding-bottom: 5%;
-      justify-content: space-evenly; }
-=======
       justify-content: space-around; }
     #how div.three-content #fingerprint {
       flex-direction: row; }
       #how div.three-content #fingerprint p {
         width: 90%;
         padding-bottom: 5%; }
->>>>>>> d460bece71bbf9eb3df433fac24c3c47fcceb55f
 
 div.four-content {
   display: flex;
