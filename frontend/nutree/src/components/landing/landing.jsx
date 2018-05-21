@@ -93,45 +93,61 @@ class LandingPage extends React.Component {
             </header>
             <div className="three-inner">
               <h2>Nutritional data fingerprint:</h2>
-              <div class-name="fingerprint">
-                <p>
-                  You upload your 23andme, ancestory.com, or MyHeritage data through genomeLink and
-                  connect your account through this application.
-                </p>
-                <p>
-                  Nutree uses your overall genomic nutritional profile in order to build a unique 3D
-                  visuapzation of this data that you can then share with friends
-                </p>
-                <p>
-                  {' '}
-                  Larger branches near the bottom of the tree are representative of micronutrients
-                  that are predicted to be naturally abundant in your bloodstream.
-                </p>
-                <p>
-                  Smaller branches are representative of micronutrients that your body may have
-                  naturally lower blood serum levels for.
-                </p>
-                <p>
-                  {' '}
-                  Your micronutrient tree visualization is 100% unique to your genetic information and
-                  as a result is as personalized to you as your fingerprint!
-                </p>
+              <div id="fingerprint">
+                <div class-name="finger-inner">
+                  <p>
+                    You upload your 23andme, ancestory.com, or MyHeritage data through genomeLink and
+                    connect your account through this application.
+                  </p>
+                  <p>
+                    Nutree uses your overall genomic nutritional profile in order to build a unique 3D
+                    visuapzation of this data that you can then share with friends
+                  </p>
+                  <p>
+                    Larger branches near the bottom of the tree are representative of micronutrients
+                    that are predicted to be naturally abundant in your bloodstream.
+                  </p>
+                  <p>
+                    Smaller branches are representative of micronutrients that your body may have
+                    naturally lower blood serum levels for.
+                  </p>
+                  <p>
+                    Your micronutrient tree visualization is 100% unique to your genetic information and
+                    as a result is as personalized to you as your fingerprint!
+                  </p>
+                </div>
+                <div className="fingerimage">
+                  <img
+                    src={require('../../images/dna2.png')}
+                    alt="dna"
+                    className="img-responsive"
+                  />
+                </div>
               </div>
               <h2>Recipe Suggestions:</h2>
-              <ul>
-                <p>
+              <div id="fingerprint">
+                <div class-name="finger-inner">
+                  <p>
                   Based on genetic markers predictative of natural blood serum levels for 11 essential
                   micronutrients...
                 </p>
-                <p>
+                  <p>
                   Nutree suggests recipes that are high in the three micronutrients that your genetic
                   data suggests your body might need the most of.
                 </p>
-                <p>
+                  <p>
                   Custom search features are availible through Edamam recipe search API to help you
                   filter out potential allergens and other foods that are restricted from your diet.
                 </p>
-              </ul>
+                </div>
+                <div className="fingerimage">
+                  <img
+                  src={require('../../images/reciepe2.jpg')}
+                  alt="dna"
+                  className="img-responsive"
+                />
+                </div>
+              </div>
             </div>
           </div>
         </section>

@@ -29,7 +29,7 @@ section {
     font-family: "Zilla Slab", serif; }
   section h2 {
     font-size: 2.5rem;
-    margin-bottom: 2rem; }
+    margin: 2rem 0; }
   section h3 {
     font-size: 3rem;
     margin-bottom: 4rem; }
@@ -154,7 +154,7 @@ div.two-content {
     width: 55%; }
 
 #how {
-  background: #fffde7; }
+  background: #fffde773; }
   #how div.three-content {
     display: flex;
     flex-direction: column;
@@ -163,11 +163,21 @@ div.two-content {
     min-height: 90vh; }
     #how div.three-content h1 {
       font-size: 5rem; }
+    #how div.three-content img {
+      width: fit-content;
+      border-radius: 2%;
+      height: auto;
+      padding-bottom: 11%; }
     #how div.three-content div {
       display: flex;
       flex-direction: column;
       padding-top: 2%;
-      justify-content: space-evenly; }
+      justify-content: space-around; }
+    #how div.three-content #fingerprint {
+      flex-direction: row; }
+      #how div.three-content #fingerprint p {
+        width: 90%;
+        padding-bottom: 5%; }
 
 div.four-content {
   display: flex;
