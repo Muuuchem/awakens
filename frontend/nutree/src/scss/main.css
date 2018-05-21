@@ -167,6 +167,7 @@ div.two-content {
       display: flex;
       flex-direction: column;
       padding-top: 2%;
+      padding-bottom: 5%;
       justify-content: space-evenly; }
 
 div.four-content {
