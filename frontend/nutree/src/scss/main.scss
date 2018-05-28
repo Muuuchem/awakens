@@ -15,14 +15,14 @@ section {
   }
   h2 {
     font-size: 2.5rem;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
   }
   h3 {
     font-size: 3rem;
     margin-bottom: 4rem;
   }
   p {
-    font-size: 2.3rem;
+    font-size: 2rem;
     line-height: 3rem;
     font-family: $primary-font;
     color: #263238cf;
@@ -135,7 +135,7 @@ div.two-content {
 }
 
 #how {
-  background: #fffde773;
+  background: #fffde7;
   div.three-content {
     display: flex;
     flex-direction: column;
@@ -145,27 +145,14 @@ div.two-content {
     h1 {
       font-size: 5rem;
     }
-    img {
-      width: fit-content;
-      border-radius: 2%;
-      height: auto;
-      padding-bottom: 11%;
+    h2 {
+      padding-top: 5%;
     }
     div {
       display: flex;
       flex-direction: column;
-      padding-top: 2%;
-      justify-content: space-around; // margin: 6rem 6rem 10rem 6rem;
-    }
-    #fingerprint {
-      flex-direction: row;
-      p {
-        width: 90%;
-        padding-bottom: 5%;
-      } // .fingerimage {
-      //   padding-top: 10%;
-      //   justify-content: flex-start;
-      // }
+      padding: 3% 0;
+      justify-content: space-evenly;
     }
   }
 }
