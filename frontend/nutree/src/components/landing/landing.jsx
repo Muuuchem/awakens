@@ -118,7 +118,7 @@ class LandingPage extends React.Component {
                 </p>
               </div>
               <h2>Recipe Suggestions:</h2>
-              <ul>
+              <div class-name="fingerprint">
                 <p>
                   Based on genetic markers predictative of natural blood serum levels for 11 essential
                   micronutrients...
@@ -131,7 +131,7 @@ class LandingPage extends React.Component {
                   Custom search features are availible through Edamam recipe search API to help you
                   filter out potential allergens and other foods that are restricted from your diet.
                 </p>
-              </ul>
+              </div>
             </div>
           </div>
         </section>
