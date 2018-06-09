@@ -165,11 +165,23 @@ div.two-content {
       font-size: 5rem; }
     #how div.three-content h2 {
       padding-top: 5%; }
+    #how div.three-content p {
+      font-size: 1.7rem;
+      padding-bottom: 0.5rem;
+      width: 90%; }
+    #how div.three-content img {
+      width: 36%; }
     #how div.three-content div {
       display: flex;
       flex-direction: column;
-      padding: 3% 0;
-      justify-content: space-evenly; }
+      padding: 1% 0 2% 0;
+      justify-content: space-evenly;
+      text-align: justify;
+      align-self: baseline; }
+    #how div.three-content div.three-inner-inner {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
 
 div.four-content {
   display: flex;
