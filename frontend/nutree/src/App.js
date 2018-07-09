@@ -7,7 +7,7 @@ import HomePage from './components/home/home';
 import Header from './components/header/header';
 import LandingPage from './components/landing/landing.jsx';
 import { AuthRoute, ProtectedRoute } from './actions/route_actions';
-
+import Recipe from './components/recipe/recipes';
 import './App.css';
 
 const App = () => (
@@ -15,7 +15,10 @@ const App = () => (
     <Header />
     <Switch>
       <Route exact path="/" component={LandingPage} />
-      <ProtectedRoute exact path="/home" component={HomePage} />
+      <Route exact path="/recipes" component={Recipe} />
+      <Route exact path="/home" component={HomePage} />
+
+      {/* <ProtectedRoute exact path="/home" component={HomePage} /> */}
       <AuthRoute path="/login" component={SessionFormContainer} />
       <AuthRoute path="/signup" component={SessionFormContainer} />
       <Redirect to="/" />

@@ -10,26 +10,30 @@ let defaultState = {
     errors: null,
 };
 
+let recipes = [];
 const RecipeReducer = (state = defaultState, action) => {
     Object.freeze(state);
+    Object.freeze(action);
     let newState = JSON.parse(JSON.stringify(state));
     switch (action.type) {
         case RECEIVE_RECIPE_TRIPLET:
-            const recipes = action.recipes[0].data;
-            if (recipes) {
-                return merge({}, state, {
-                    recipes
+            //  recipes = action.recipes[0].data;
+            recipes = action.recipes[0].data.slice(0,3);
+            if (recipes.length>1) {
+                console.log(recipes);
+                return merge({}, newState, {
+                    recipes: recipes
                 });
             } else {
                     return merge({}, state, {recipes: null});
                 }
         case RECEIVE_ERRORS:
             const errors = action.errors;
-            return merge({}, state, {
+            return merge({}, newState, {
                 errors
             });
         default:
-            return state;
+            return newState;
     }
 };
 

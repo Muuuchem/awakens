@@ -20,6 +20,22 @@ body {
   margin: 0;
   font-size: 3rem; }
 
+input.search-form {
+  display: flex;
+  width: 50%;
+  align-self: flex-start;
+  height:20px;
+  font-size:14pt;
+  border: 10px;
+  /*margin-left: 10px;*/
+  /*outline: double hsla(0, 0%,50%, 1);
+  outline-width: 2px;*/
+  /*margin-top: 50px;*/
+  margin: 18px;
+  border: 1px solid #ddd;
+  box-shadow: 0 3px 2px -2px rgba(200,200,200,0.2);
+}
+
 section {
   padding-top: 4rem;
   color: #424242; }
